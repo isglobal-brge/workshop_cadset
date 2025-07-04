@@ -1,0 +1,79 @@
+---
+title: "DataSHIELD CADSET Workshop"
+---
+
+# Introduction
+
+This website hosts the materials and exercises for the DataSHIELD workshop for the CADSET project. On it you will find reading materials, setup tutorials, workshop indications and practical exercises.
+
+The workshop is organized by [Bioinformatics Research Group in Epidemiology (BRGE)](https://brge.isglobal.org) from the [Barcelona Institute for Global Health (iSGlobal)](https://isglobal.org).
+
+# Getting Started
+
+All practical exercises will be conducted using multiple servers including the [public Opal demo server](https://opal-demo.obiba.org/), ISGlobal, Imperial College London, and Groningen University servers. These servers provide fully functional DataSHIELD environments with CADSET datasets that workshop participants can use to replicate the examples.
+
+Login credentials and server details are provided in the workshop materials.
+
+## Prerequisites
+
+Before starting the workshop, participants need to have the following software installed on their computers:
+
+### 1. RStudio Installation
+
+Make sure you have **RStudio** installed on your computer. If you don't have it yet, download it from:
+- **[Download RStudio](https://posit.co/download/rstudio-desktop/)**
+
+### 2. Rtools Installation (Windows users only)
+
+Windows users need to install **Rtools** to compile packages from source:
+- **[Download Rtools](https://cran.r-project.org/bin/windows/Rtools/)**
+
+*Note: Mac and Linux users typically don't need this step as they have the necessary tools built-in.*
+
+### 3. Required R Packages
+
+Once you have RStudio and Rtools (if needed) installed, open RStudio and run the following commands to install all required packages:
+
+```r
+# Essential development tools
+install.packages('devtools')
+
+# Core DataSHIELD packages
+install.packages('DSI')
+install.packages('DSOpal')
+
+# Additional required packages
+install.packages("https://cran.r-project.org/src/contrib/Archive/panelaggregation/panelaggregation_0.1.1.tar.gz", repos = NULL, type = 'source')
+
+install.packages('dsBaseClient', repos=c(getOption('repos'), 'http://cran.datashield.org'), dependencies=TRUE)
+
+install.packages("metafor")
+devtools::install_github("timcadman/ds-helper")
+
+# Armadillo connection packages
+install.packages("MolgenisArmadillo")
+install.packages("DSMolgenisArmadillo")
+```
+
+**⚠️ Important Notes:**
+- Package installation may take several minutes
+- If you encounter any errors during installation, please contact the workshop organizers
+- Make sure you have a stable internet connection during package installation
+
+# Workshop Materials
+
+**Ready to start?** Access the complete workshop materials here:
+
+**[→ Go to the workshop materials](DataSHIELD_workshop_CADSET.html)**
+
+# Supplementary Materials
+
+For additional reading and complementary resources, explore these academic publications and documentation:
+
+- **[DataSHIELD: taking the analysis to the data, not the data to the analysis](https://academic.oup.com/bioinformatics/article/5/1/vbaf046/8068803)** - *Bioinformatics Advances* (2025)
+
+- **[BRGE DataSHIELD Bookdown](https://isglobal-brge.github.io/resource_bookdown/)**
+
+- **[DataSHIELD: resolving a conflict in contemporary bioinformatics—performing a pooled analysis of individual-level data without sharing the data](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008880)** - *PLoS Computational Biology* (2021)
+
+- **[Harmonizing and meta-analyzing omics data with a comprehensive pipeline](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012626)** - *PLoS Computational Biology* (2024)

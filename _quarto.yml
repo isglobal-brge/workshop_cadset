@@ -1,0 +1,20 @@
+project:
+  type: website
+  title: "DataSHIELD CADSET Workshop"
+  output-dir: docs
+
+website:
+  title: "DataSHIELD CADSET Workshop"
+  navbar:
+    logo: logo_brge.png
+    left:
+      - href: index.qmd
+        text: Home
+      - href: DataSHIELD_workshop_CADSET.Rmd
+        text: Workshop
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true

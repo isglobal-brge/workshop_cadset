@@ -1,0 +1,554 @@
+---
+title: "DataSHIELD Workshop: Use case CADSETshield, Friday 4th July 2025"
+output: html_notebook
+---
+### INFORMATION FOR NEWCOMERS TO RSTUDIO NOTEBOOKS: 
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+# DataSHIELD for analyzing simulated CADSET data
+
+The plan for this workshop is as follows:
+
+- Installing DataSHIELD
+- Logging in and assigning data
+- Describing data
+- Manipulating data
+- Subsetting data
+- Data manipulation with dsHelper
+- Making graphs
+- Performing regression analysis
+
+
+## Installing DataSHIELD
+
+Firstly: check whether we have the right R packages installed to run DataSHIELD: using the very helpful devtools package (which has already been installed for us by Stuart!), we'll use the "Session info" command:
+
+```{r, eval=FALSE}
+install.packages("devtools")
+library(devtools)
+devtools::session_info()
+```
+
+We are missing some of the necessary packages: "DSI", "DSOpal" and "dsBaseClient". 
+
+```{r, eval=FALSE}
+install.packages('DSI')
+install.packages('DSOpal')
+
+
+install.packages("https://cran.r-project.org/src/contrib/Archive/panelaggregation/panelaggregation_0.1.1.tar.gz", repos = NULL, type = 'source')
+
+install.packages('dsBaseClient', repos=c(getOption('repos'),  'http://cran.datashield.org'), dependencies=TRUE)
+
+install.packages("metafor")
+devtools::install_github("timcadman/ds-helper")
+```
+
+Also some packages for Armadillo
+
+```{r, eval = FALSE}
+install.packages("MolgenisArmadillo")
+install.packages("DSMolgenisArmadillo")
+```
+
+Remember to load them into this R session using "library()" command:
+
+```{r}
+library(DSI)
+library(DSOpal)
+
+library(MolgenisArmadillo)
+library(DSMolgenisArmadillo)
+
+library(dsBaseClient)
+library(dsHelper)
+library(metafor)
+```
+
+Check that they have now been added:
+
+```{r, eval=FALSE}
+devtools::session_info()
+```
+
+## Logging in and assigning data
+
+The login script has to be customized to fit the data you are trying to connect to.
+
+The "builder <-" and "builder$append" functions are standard features.
+
+For this demonstration we are connecting to simulated data- but if it was data of real people, it would be very important for us not to be able to see individual patients' information.
+
+
+For this workshop, we'll imagine that the data is hosted in a single three/four Opal repositories and one Armadillo. The below code creates a local R object with the login details for each study:
+
+```{r}
+builder <- DSI::newDSLoginBuilder()
+
+# Server 1: France 
+builder$append(
+  server = 'France', 
+  url = "https://opal-demo.obiba.org",
+  user = "dsuser", 
+  password = "P@ssw0rd"
+)
+
+# Server 2: Spain (ISGlobal)
+builder$append(
+  server = 'ISGlobal', 
+  url = "https://opal.isglobal.org/repo",
+  user = "invited", 
+  password = "12345678Aa@"
+)
+
+# Server 3: UK (Imperial)
+builder$append(
+  server = "Imperial",
+  url = "https://cadset.dsi.ic.ac.uk/",
+  user = "jrgonzalez",
+  password = "Cadset_test1!"
+)
+
+# Server 4: LEAD
+# builder$append(
+#   server = 'LEAD', 
+#   url = "https://ods.lbg.ac.at",
+#   user = "JuanGonzalez", 
+#   password = "Gp7#vXq9Lz"
+# )
+```
+
+
+
+For Groningen we need to connect through Molgenis and we require a personal token
+
+```{r, eval=FALSE}
+token <- armadillo.get_token("https://cadsetgroningennl.molgeniscloud.org/")
+
+# Server 5: Groningen
+builder$append(
+  server = "Groningen", 
+  url = "https://cadsetgroningennl.molgeniscloud.org/", 
+  token = token, 
+  driver = "ArmadilloDriver"
+)
+```
+
+
+Now we need to connect, referring to the login information in the data frame we have just created:
+
+```{r}
+logindata <- builder$build()
+conns <- DSI::datashield.login(logins = logindata, 
+                                     assign = FALSE)
+```
+
+The 'assign' argument can be set to either 'TRUE' or 'FALSE'. If set to 'TRUE', all the available variables within that table will be assigned to a serverside data frame and available to access. If you only need a small subset of available variables it can be preferable to set this to 'FALSE' and later use the function 'datashield.assign' to separately assign only the variables you need (as it is this case). The output of this box has useful progress bars which show the progress of connecting to studies, one by one. 
+
+
+
+We can see the serverside doesn't have any object by running:
+
+```{r}
+ds.ls()
+```
+
+We need to create the objects etither form tables (e.g. a data frame called `cadset` ) or resources. 
+
+For ISGlobal, Imperial and Groningen we have tables
+
+```{r}
+datashield.assign.table(conns[2:4], symbol = "cadset", 
+                        table = list(
+                          ISGlobal = "CADSET.cadset_four",
+                          Imperial = "CADSET.cadset_six"
+                          # Groningen = "cad/folder/data"
+                        )
+                      )
+```
+
+and France contains a resource
+
+
+```{r}
+datashield.assign.resource(
+  conns$France,
+  symbol = "resource",
+  resource = list(France = "CADSET-coh1.cadset_1")
+  )
+
+datashield.assign.expr(
+  conns$France,
+  symbol = "cadset",
+  expr = quote(as.resource.data.frame(resource))
+)
+```
+
+
+Now we can see that each server has the data in an object called `cadset` 
+
+```{r}
+ds.ls()
+```
+
+which is a data.fame
+
+
+```{r}
+ds.class("cadset")
+```
+
+
+and the data.frame has these variables
+
+```{r, eval=FALSE}
+ds.colnames("cadset")
+```
+
+################################################################################
+
+## Describing data ('aggregate-type functions')
+
+There are many data exploration functions already implemented into DataSHIELD: let's check it out at the wiki [https://data2knowledge.atlassian.net/wiki/spaces/DSDEV/pages/2733244417/Version+6.2.0](https://data2knowledge.atlassian.net/wiki/spaces/DSDEV/pages/2733244417/Version+6.2.0)
+
+Scroll down to "Data structure queries". Let's try out a few of these:
+
+```{r}
+ds.dim(x="cadset", datasources = conns)
+```
+
+NOTE: writting `datasources = conns` is not required. This is just to emphasize that if you have several connections you need to specify which one is yours. By default, it missing it looks for your local environment
+
+```{r}
+ls()
+```
+So, this would also work
+
+```{r}
+ds.dim("cadset")
+
+# ds.colnames("cadset")
+```
+
+What it is *mandatory* is to write the name of the data.frame with "".  
+
+### We're going to be focus on FEV1. 
+
+This is a measure of HDL Cholesterol (aka the "good cholesterol" level)
+
+Let's run some summary statistic commands
+
+```{r}
+
+ds.class(x='cadset$fev1_cadset')
+ds.length(x='cadset$fev1_cadset')
+ds.mean(x='cadset$fev1_cadset')
+
+```
+
+What is this other function to obtain the mean? Let's use the DataSHIELD function help documentation.
+```{r}
+?ds.quantileMean
+```
+
+Now, putting into action some of what we've learned about the function arguments. NOTE: 'split' is in case you have data from different servers and you want to see the statistic one by one.
+
+```{r}
+ds.quantileMean(x='cadset$fev1_cadset')
+
+ds.quantileMean(x='cadset$fev1_cadset', type = "split")
+
+```
+
+Trying to calculate the variance of FEV1:
+```{r}
+?ds.var
+```
+
+```{r}
+ds.var(x = 'cadset$fev1_cadset', type = "split")
+```
+
+Can we store the results calculated from a DataSHIELD analysis in a local R session?
+
+Yes- the output of aggregate functions are always R objects, hence can be stored.
+
+```{r}
+a<-ds.var(x = 'cadset$fev1_cadset', type = "split")[[1]]
+a
+b<-ds.var(x = 'cadset$fev1_cadset', type = "split")[[1]][[1,1]]
+b
+```
+
+The square brackets are because we are trying to access an element of a list- which is the R object that DataSHIELD aggregate functions output as.
+
+Factor variables visualize by simply writting
+
+```{r}
+# ds.table("cadset$malesex_cadset")
+```
+
+### Using dsHelper to retrieve statistics in a neater format. 
+
+As you may have noticed, some operations which are more straightforward in R can be more complicated in datashield. To help with this, the dsHelper package allows you to do some common operations in fewer lines of code. DsHelper is an entirely serverside package - it contains only clientside functions which call DataSHIELD functions serverside. 
+
+We have seen datashield has a range of functions to retrieve statistics, but is limited in that (i) you need to use different functions for different statistics, (ii) you can only get stats for one variable at a time. dh.GetStats returns many useful stats in a tibble, and allows you to retrieve stats for multiple variables at a time.
+
+```{r, eval = FALSE}
+neat_stats <- dh.getStats(
+	df = "cadset",
+  vars = c("age_cadset", "fev1_cadset", "fvc_cadset", "packyears_cadset",
+           "eversmoker_cadset", "fev1pcpredicted_cadset"))
+           
+neat_stats
+```
+
+Let us see what happened:
+
+```{r, eval = FALSE}
+datashield.errors()
+```
+
+
+################################################################################
+
+## Manipulating data ('assign-type' functions)
+
+Assign-type functions are ones where a calculation is done on the data stored at the server (and results of that calculation are "assigned" to a serverside variable, and saved there), but is NOT transmitted back to the user.
+
+The reason for this is that some calculations could be highly disclosive- and if such data were transmitted to the analyst, with not much effort at all, with an inverse function, the analyst could work out exactly what the raw data are- and thus the data's privacy is broken!
+
+To demonstrate: 
+
+```{r}
+ds.ls(datasources = conns)
+ds.log(x='cadset$fev1_cadset', newobj='hdl_log', datasources = conns)
+ds.ls(datasources = conns)
+ds.mean(x="hdl_log",datasources= conns)
+# ds.mean(x="D$hdl",datasources= conns)
+```
+The second "ds.mean" shows that the mean of the logged values are definitely smaller, by about the right amount. The DataSHIELD log function has worked.
+
+There is another DataSHIELD assign function that can be used for data transformations - a square root function. Let's test again:
+
+```{r}
+ds.sqrt(x='cadset$fev1_cadset', newobj='fev1_sqrt')
+ds.ls()
+ds.mean(x="fev1_sqrt")
+ds.mean(x="cadset$fev1_cadset")
+```
+These new objects are not attached to a dataframe. 
+Use the help function to find out about the ds.dataFrame function, which can be used to combine objects.
+
+Now join "fev1_sqrt" and "fev1_log" to the dataframe "cadset".
+
+```{r}
+# ds.dataFrame(c("cadset", "fev1_sqrt", "fev1_log"), newobj = "cadset")
+# ds.colnames("cadset")
+```
+
+**EXERCISE: Using some of the functions above, explore the distribution of the variable "packyears_cadset" in dataframe "cadset".**
+
+
+Here you see this has returned a list of two tibbles separated into continuous and categorical information. For the categorical variables info is returned on ns, percentages and missingness within each category, whilst for continuous variables info is returned on mean, standard deviation, quantiles and also missingness.
+
+
+## Sub-setting data
+
+In DataSHIELD there is one function that allows sub-setting of data, ds.dataFrameSubset .
+
+You may wish to use it to:
+
+Subset a column of data by its "Class"
+Subset a dataframe to remove any "NA"s
+Subset a numeric column of a dataframe using a Boolean inequalilty
+
+```{r}
+# first find the column name you wish to refer to
+# ds.colnames(x="cadset")
+# then check which levels you need to apply a boolean operator to:
+# ds.levels(x="cadset$malesex_cadset")
+?ds.dataFrameSubset
+```
+
+## Data manipulation with dsHelper
+We can use some dsHelper functions to do data manipulation operations in a more efficient way. 
+
+### Create a subset of columns by a vector of column names
+
+```{r}
+dh.dropCols(
+	df = "cadset", 
+  vars = c("cohort_cadset", "age_cadset"), 
+  type = "keep",
+  new_obj = "df_subset")
+  
+ds.colnames("df_subset")
+```
+
+
+### Rename variables
+```{r, eval=FALSE}
+dh.renameVars(
+	df = "cadset", 
+  current_names = c("fev1_cadset", "age_cadset"),
+  new_names = c("fev1", "age"))
+  
+# ds.colnames("cadset")
+```
+
+There are many more dsHelper functions designed to make common operations easier in datashield, check out the vignettes at: [https://github.com/timcadman/ds-helper/blob/master/vignettes/ds-helper-main-vignette.Rmd](https://github.com/timcadman/ds-helper/blob/master/vignettes/ds-helper-main-vignette.Rmd)
+
+
+**EXERCISE: try some of them (Transforming continuous variable to interquartile range; use dh.getStats(), ...)**
+
+
+################################################################################
+
+## Graphs
+
+Visualising the data we are studying is extremely important to get a sense of it. While it may seem disclosive at first glance, only such graphs that are definitively non-disclosive have been implemented within the DataSHIELD project.
+
+### Histograms
+
+Firstly, histograms give a good sense of how one variable is distributed. But no individual points are disclosed because values are "binned" into groups of a similar magnitude, disguising what each one actually is. We protect privacy by removing bins with low counts (below specific threshold). If you have a symmetric distribution, you may find some things aren't observed at the extreme ends.
+
+Let's create a histogram of the variable we've been investigating for much of this study: FEV1 (now called "fev1").
+
+```{r, eval=FALSE}
+?ds.histogram
+ds.histogram(x='cadset$fev1', datasources = conns)
+```
+
+**Use the ds.histogram to explore the distribution of "fev1pcpredicted_cadset"**
+
+### Scatterplots of two numerical variables
+
+When you generate a scatter plot, you can say that the data points that are displayed are not the actual values. The function gives you the choice on how to anonymise: either you anonymise the values by additional random noise; or you take the average of the k nearest neighbours. (for more details on how anonymisation methods are used for the generation of privacy-preserving visualisations you can have a look on the paper https://epjdatascience.springeropen.com/articles/10.1140/epjds/s13688-020-00257-4)
+
+```{r}
+# ds.scatterPlot(x="cadset$fev1", y="cadset$weight_cadset")
+```
+
+Other DataSHIELD graphical functions allow the creation of box plots, heatmap plots and contour plots. Investigate them using their help functions:
+```{r}
+?ds.heatmapPlot
+?ds.contourPlot
+?ds.boxPlot
+```
+
+################################################################################
+
+
+
+## Analysis
+
+### Simple Linear Regression
+
+We want to examine the relationship between BMI and HDL Cholesterol
+```{r}
+# ds.cor(x='cadset$fev1', y='cadset$weight_cadset')
+```
+
+ 
+
+Regress FEV1 with weigth using the Individual Partition Data (IPD) approach:
+
+ 
+
+The method for this (ds.glm) is a "pooled analysis"- equivalent to placing the individual-level data from all sources in one warehouse.
+
+ 
+
+Important to note that the link function is by default the canonical link function for each family. So binomial <-> logistic link, poisson <-> log link, gaussian <-> identity link.
+
+ 
+
+```{r, eval=FALSE}
+mod <- ds.glm(formula = "cadset$fev1 ~ cadset$weight_cadset", 
+              family="gaussian")
+mod
+```
+
+We can use `ds-helper` to nicely see the output
+
+```{r, eval=FALSE}
+dh.lmTab(
+  model = mod, 
+  type = "glm_ipd", 
+  direction = "wide", 
+  ci_format  = "separate")
+```
+
+
+We can perfome  Study-Level Meta-Analysis (SLMA) approach.  See [https://isglobal-brge.github.io/resource_bookdown/basic-statistical-analyses.html#analysis-from-a-multiple-studies](https://isglobal-brge.github.io/resource_bookdown/basic-statistical-analyses.html#analysis-from-a-multiple-studies)
+
+
+### Modelling multiple variables and interactions
+
+Also possible to model multiple explanatory variables and include interactions: 
+
+ 
+```{r, eval=FALSE}
+glm_mod1<-ds.glm(formula="cadset$fev1 ~ cadset$weight_cadset + 
+                 cadset$weight_cadset*cadset$malesex_cadset +
+                 cadset$smokerstatus_cadset",
+                 family = "gaussian")
+```
+The "*" between LAB_HDL and SEX means fit all possible main effects and interactions between the two covariates.
+
+ 
+
+
+## At the end of your RStudio Server analysis:
+
+You can save your workspace:
+```{r}
+DSI::datashield.workspace_save(conns = conns, ws = "workspace2025")
+```
+
+Don't forget to log out! Using:
+```{r}
+DSI::datashield.logout(conns)
+```
+
+
+You can restore your workspace, the next time you want to continue with your analysis
+```{r}
+conns <- datashield.login(logins = logindata, 
+                          assign = TRUE, symbol = "cadset")
+ds.ls()
+datashield.logout(conns)
+
+conns <- datashield.login(logins = logindata, restore = "workspace2025")
+ds.ls()
+```
+
+Also you can delete unwanted workspaces using the datashield.workspace_rm
+
+In Rstudio Server: DON'T forget to use the orange "quit the current R session" button (top right of browser screen) before closing the tab- otherwise you will experience an error message the next time you try to log in.
+
+
+# Exercise
+
+
+We have access to 3 datasets corresponding to simulated data from UKBiobank available through CINECA study. This data reproduces the exact associations found at UKBiobank. Next table shows the data dictionary of XX selected variables. The three datasets are accessed in this Opal server (https://opal-demo.obiba.org/) in a project called GWAS as three different resources (named ega_phenotypes_1, ega_phenotypes_2 and ega_phenotypes_3).
+
+
+
+Then, load ONE of the three resources in R as data.frame’s using the functions available in the DSI library and answer the next questions using the  functions available at dsBaseClient package. 
+
+
+- Check that your loaded objects are of class data.frame
+- How many individuals have been diagnosed with diabetes by doctor (variable - diabetes_diagnosed_doctor)?
+- Obtain the same information stratified by sex (Hint: create a 2x2 table).
+- Create an histogram of the variable height by combining information across the three different datasets (Hint: type ?ds.histogram to see how to get this plot).
+- Create a correlation plot between bmi and weight combining data from the three studies (Hint: ?ds.scatterPlot).
+- Compute the correlation between bmiand weight.
+- Fit a regression model between cholesterol and weight.
+- Fit a regression model between diabetes (variable diabetes_diagnosed_doctor) and colesterol level (variable cholesterol). Note: remember that outcome variable (e.g. diabetes) must be a factor variable.
+- Fit the same model adjusted by bmi. Is still cholesterol associated with diabetes?
+- Is there any interaction between cholesterol and sex adjusted by bmi?
