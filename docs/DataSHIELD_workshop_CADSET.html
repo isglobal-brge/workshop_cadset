@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.31">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -21,9 +21,8 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 /* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -34,7 +33,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -65,16 +64,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-ddd961a2510921635943dfbbd19534c4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -107,7 +105,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -254,26 +252,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(DSI)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Loading required package: progress</code></pre>
+<pre><code>Cargando paquete requerido: progress</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Loading required package: R6</code></pre>
+<pre><code>Cargando paquete requerido: R6</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(DSOpal)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Loading required package: opalr</code></pre>
+<pre><code>Cargando paquete requerido: opalr</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Loading required package: httr</code></pre>
+<pre><code>Cargando paquete requerido: httr</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(MolgenisArmadillo)</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(DSMolgenisArmadillo)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Loading required package: MolgenisAuth</code></pre>
+<pre><code>Cargando paquete requerido: MolgenisAuth</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
 <pre><code>
-Attaching package: 'DSMolgenisArmadillo'</code></pre>
+Adjuntando el paquete: 'DSMolgenisArmadillo'</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
 <pre><code>The following object is masked from 'package:MolgenisArmadillo':
@@ -284,13 +282,13 @@ Attaching package: 'DSMolgenisArmadillo'</code></pre>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dsHelper)</span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(metafor)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Loading required package: Matrix</code></pre>
+<pre><code>Cargando paquete requerido: Matrix</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Loading required package: metadat</code></pre>
+<pre><code>Cargando paquete requerido: metadat</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Loading required package: numDeriv</code></pre>
+<pre><code>Cargando paquete requerido: numDeriv</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
 <pre><code>
@@ -301,6 +299,129 @@ introduction to the package please type: help(metafor)</code></pre>
 <p>Check that they have now been added:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">session_info</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", : el
+comando ejecutado '"quarto"
+TMPDIR=C:/Users/jrgonzalez/AppData/Local/Temp/RtmpwZPIIY/file406414c15134 -V'
+tiene el estatus 1</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>─ Session info ───────────────────────────────────────────────────────────────
+ setting  value
+ version  R version 4.5.1 (2025-06-13 ucrt)
+ os       Windows 11 x64 (build 26100)
+ system   x86_64, mingw32
+ ui       RTerm
+ language (EN)
+ collate  Spanish_Spain.utf8
+ ctype    Spanish_Spain.utf8
+ tz       Europe/Madrid
+ date     2025-07-04
+ pandoc   3.4 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
+ quarto   NA @ C:\\PROGRA~1\\RStudio\\RESOUR~1\\app\\bin\\quarto\\bin\\quarto.exe
+
+─ Packages ───────────────────────────────────────────────────────────────────
+ package             * version    date (UTC) lib source
+ arrow                 20.0.0.2   2025-05-26 [1] CRAN (R 4.5.0)
+ assertthat            0.2.1      2019-03-21 [1] CRAN (R 4.5.0)
+ backports             1.5.0      2024-05-23 [1] CRAN (R 4.5.0)
+ base64enc             0.1-3      2015-07-28 [1] CRAN (R 4.5.0)
+ bit                   4.6.0      2025-03-06 [1] CRAN (R 4.5.0)
+ bit64                 4.6.0-1    2025-01-16 [1] CRAN (R 4.5.0)
+ boot                  1.3-31     2024-08-28 [1] CRAN (R 4.5.1)
+ cachem                1.1.0      2024-05-16 [1] CRAN (R 4.5.0)
+ checkmate             2.3.2      2024-07-29 [1] CRAN (R 4.5.0)
+ cli                   3.6.5      2025-04-23 [1] CRAN (R 4.5.0)
+ crayon                1.5.3      2024-06-20 [1] CRAN (R 4.5.0)
+ data.table            1.17.6     2025-06-17 [1] CRAN (R 4.5.0)
+ devtools              2.4.5      2022-10-11 [1] CRAN (R 4.5.0)
+ digest                0.6.37     2024-08-19 [1] CRAN (R 4.5.0)
+ dplyr                 1.1.4      2023-11-17 [1] CRAN (R 4.5.0)
+ dsBaseClient        * 6.3.0      2025-07-03 [1] local
+ dsHelper            * 1.7.1      2025-07-03 [1] Github (timcadman/ds-helper@1b2348d)
+ DSI                 * 1.7.1      2024-11-03 [1] CRAN (R 4.5.0)
+ DSMolgenisArmadillo * 2.0.9      2024-07-09 [1] CRAN (R 4.5.0)
+ DSOpal              * 1.4.0      2022-10-06 [1] CRAN (R 4.5.0)
+ ellipsis              0.3.2      2021-04-29 [1] CRAN (R 4.5.0)
+ evaluate              1.0.4      2025-06-18 [1] CRAN (R 4.5.0)
+ fastmap               1.2.0      2024-05-15 [1] CRAN (R 4.5.0)
+ forcats               1.0.0      2023-01-29 [1] CRAN (R 4.5.0)
+ fs                    1.6.6      2025-04-12 [1] CRAN (R 4.5.0)
+ generics              0.1.4      2025-05-09 [1] CRAN (R 4.5.0)
+ glue                  1.8.0      2024-09-30 [1] CRAN (R 4.5.0)
+ haven                 2.5.5      2025-05-30 [1] CRAN (R 4.5.0)
+ hms                   1.1.3      2023-03-21 [1] CRAN (R 4.5.0)
+ htmltools             0.5.8.1    2024-04-04 [1] CRAN (R 4.5.0)
+ htmlwidgets           1.6.4      2023-12-06 [1] CRAN (R 4.5.0)
+ httpuv                1.6.16     2025-04-16 [1] CRAN (R 4.5.0)
+ httr                * 1.4.7      2023-08-15 [1] CRAN (R 4.5.0)
+ httr2                 1.1.2      2025-03-26 [1] CRAN (R 4.5.0)
+ jsonlite              2.0.0      2025-03-27 [1] CRAN (R 4.5.0)
+ knitr                 1.50       2025-03-16 [1] CRAN (R 4.5.0)
+ labelled              2.14.1     2025-05-06 [1] CRAN (R 4.5.0)
+ later                 1.4.2      2025-04-08 [1] CRAN (R 4.5.0)
+ lattice               0.22-7     2025-04-02 [1] CRAN (R 4.5.1)
+ lifecycle             1.0.4      2023-11-07 [1] CRAN (R 4.5.0)
+ lme4                  1.1-37     2025-03-26 [1] CRAN (R 4.5.0)
+ magrittr              2.0.3      2022-03-30 [1] CRAN (R 4.5.0)
+ MASS                  7.3-65     2025-02-28 [1] CRAN (R 4.5.1)
+ mathjaxr              1.8-0      2025-04-30 [1] CRAN (R 4.5.0)
+ Matrix              * 1.7-3      2025-03-11 [1] CRAN (R 4.5.1)
+ memoise               2.0.1      2021-11-26 [1] CRAN (R 4.5.0)
+ metadat             * 1.4-0      2025-02-04 [1] CRAN (R 4.5.0)
+ metafor             * 4.8-0      2025-01-28 [1] CRAN (R 4.5.0)
+ mime                  0.13       2025-03-17 [1] CRAN (R 4.5.0)
+ miniUI                0.1.2      2025-04-17 [1] CRAN (R 4.5.0)
+ minqa                 1.2.8      2024-08-17 [1] CRAN (R 4.5.0)
+ MolgenisArmadillo   * 2.9.1      2025-06-13 [1] CRAN (R 4.5.0)
+ MolgenisAuth        * 0.0.25     2023-02-20 [1] CRAN (R 4.5.0)
+ nlme                  3.1-168    2025-03-31 [1] CRAN (R 4.5.1)
+ nloptr                2.2.1      2025-03-17 [1] CRAN (R 4.5.0)
+ numDeriv            * 2016.8-1.1 2019-06-06 [1] CRAN (R 4.5.0)
+ opalr               * 3.4.2      2024-09-18 [1] CRAN (R 4.5.0)
+ pillar                1.10.2     2025-04-05 [1] CRAN (R 4.5.0)
+ pkgbuild              1.4.8      2025-05-26 [1] CRAN (R 4.5.0)
+ pkgconfig             2.0.3      2019-09-22 [1] CRAN (R 4.5.0)
+ pkgload               1.4.0      2024-06-28 [1] CRAN (R 4.5.0)
+ prettyunits           1.2.0      2023-09-24 [1] CRAN (R 4.5.0)
+ profvis               0.4.0      2024-09-20 [1] CRAN (R 4.5.0)
+ progress            * 1.2.3      2023-12-06 [1] CRAN (R 4.5.0)
+ promises              1.3.3      2025-05-29 [1] CRAN (R 4.5.0)
+ purrr                 1.0.4      2025-02-05 [1] CRAN (R 4.5.0)
+ R6                  * 2.6.1      2025-02-15 [1] CRAN (R 4.5.0)
+ rappdirs              0.3.3      2021-01-31 [1] CRAN (R 4.5.0)
+ rbibutils             2.3        2024-10-04 [1] CRAN (R 4.5.0)
+ Rcpp                  1.0.14     2025-01-12 [1] CRAN (R 4.5.0)
+ Rdpack                2.6.4      2025-04-09 [1] CRAN (R 4.5.0)
+ readr                 2.1.5      2024-01-10 [1] CRAN (R 4.5.0)
+ reformulas            0.4.1      2025-04-30 [1] CRAN (R 4.5.0)
+ remotes               2.5.0      2024-03-17 [1] CRAN (R 4.5.0)
+ rlang                 1.1.6      2025-04-11 [1] CRAN (R 4.5.0)
+ rlist                 0.4.6.2    2021-09-03 [1] CRAN (R 4.5.0)
+ rmarkdown             2.29       2024-11-04 [1] CRAN (R 4.5.0)
+ rstudioapi            0.17.1     2024-10-22 [1] CRAN (R 4.5.0)
+ sessioninfo           1.2.3      2025-02-05 [1] CRAN (R 4.5.0)
+ shiny                 1.11.0     2025-06-24 [1] CRAN (R 4.5.0)
+ stringi               1.8.7      2025-03-27 [1] CRAN (R 4.5.0)
+ stringr               1.5.1      2023-11-14 [1] CRAN (R 4.5.0)
+ tibble                3.3.0      2025-06-08 [1] CRAN (R 4.5.0)
+ tidyr                 1.3.1      2024-01-24 [1] CRAN (R 4.5.0)
+ tidyselect            1.2.1      2024-03-11 [1] CRAN (R 4.5.0)
+ triebeard             0.4.1      2023-03-04 [1] CRAN (R 4.5.0)
+ tzdb                  0.5.0      2025-03-15 [1] CRAN (R 4.5.0)
+ urlchecker            1.0.1      2021-11-30 [1] CRAN (R 4.5.0)
+ urltools              1.7.3.1    2025-06-12 [1] CRAN (R 4.5.0)
+ usethis               3.1.0      2024-11-26 [1] CRAN (R 4.5.0)
+ vctrs                 0.6.5      2023-12-01 [1] CRAN (R 4.5.0)
+ xfun                  0.52       2025-04-02 [1] CRAN (R 4.5.0)
+ xtable                1.8-4      2019-04-21 [1] CRAN (R 4.5.0)
+ yaml                  2.3.10     2024-07-26 [1] CRAN (R 4.5.0)
+
+ [1] C:/Users/jrgonzalez/AppData/Local/Programs/R/R-4.5.1/library
+ * ── Packages attached to the search path.
+
+──────────────────────────────────────────────────────────────────────────────</code></pre>
+</div>
 </div>
 </section>
 <section id="logging-in-and-assigning-data" class="level2">
@@ -310,57 +431,56 @@ introduction to the package please type: help(metafor)</code></pre>
 <p>For this demonstration we are connecting to simulated data- but if it was data of real people, it would be very important for us not to be able to see individual patients’ information.</p>
 <p>For this workshop, we’ll imagine that the data is hosted in a single three/four Opal repositories and one Armadillo. The below code creates a local R object with the login details for each study:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>builder <span class="ot">&lt;-</span> DSI<span class="sc">::</span><span class="fu">newDSLoginBuilder</span>()</span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Server 1: France </span></span>
-<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>builder<span class="sc">$</span><span class="fu">append</span>(</span>
-<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">server =</span> <span class="st">'France'</span>, </span>
-<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">url =</span> <span class="st">"https://opal-demo.obiba.org"</span>,</span>
-<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">user =</span> <span class="st">"dsuser"</span>, </span>
-<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">password =</span> <span class="st">"P@ssw0rd"</span></span>
-<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Server 2: Spain (ISGlobal)</span></span>
-<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a>builder<span class="sc">$</span><span class="fu">append</span>(</span>
-<span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">server =</span> <span class="st">'ISGlobal'</span>, </span>
-<span id="cb20-14"><a href="#cb20-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">url =</span> <span class="st">"https://opal.isglobal.org/repo"</span>,</span>
-<span id="cb20-15"><a href="#cb20-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">user =</span> <span class="st">"invited"</span>, </span>
-<span id="cb20-16"><a href="#cb20-16" aria-hidden="true" tabindex="-1"></a>  <span class="at">password =</span> <span class="st">"12345678Aa@"</span></span>
-<span id="cb20-17"><a href="#cb20-17" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb20-18"><a href="#cb20-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-19"><a href="#cb20-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Server 3: UK (Imperial)</span></span>
-<span id="cb20-20"><a href="#cb20-20" aria-hidden="true" tabindex="-1"></a>builder<span class="sc">$</span><span class="fu">append</span>(</span>
-<span id="cb20-21"><a href="#cb20-21" aria-hidden="true" tabindex="-1"></a>  <span class="at">server =</span> <span class="st">"Imperial"</span>,</span>
-<span id="cb20-22"><a href="#cb20-22" aria-hidden="true" tabindex="-1"></a>  <span class="at">url =</span> <span class="st">"https://cadset.dsi.ic.ac.uk/"</span>,</span>
-<span id="cb20-23"><a href="#cb20-23" aria-hidden="true" tabindex="-1"></a>  <span class="at">user =</span> <span class="st">"jrgonzalez"</span>,</span>
-<span id="cb20-24"><a href="#cb20-24" aria-hidden="true" tabindex="-1"></a>  <span class="at">password =</span> <span class="st">"Cadset_test1!"</span></span>
-<span id="cb20-25"><a href="#cb20-25" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb20-26"><a href="#cb20-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-27"><a href="#cb20-27" aria-hidden="true" tabindex="-1"></a><span class="co"># Server 4: LEAD</span></span>
-<span id="cb20-28"><a href="#cb20-28" aria-hidden="true" tabindex="-1"></a><span class="co"># builder$append(</span></span>
-<span id="cb20-29"><a href="#cb20-29" aria-hidden="true" tabindex="-1"></a><span class="co">#   server = 'LEAD', </span></span>
-<span id="cb20-30"><a href="#cb20-30" aria-hidden="true" tabindex="-1"></a><span class="co">#   url = "https://ods.lbg.ac.at",</span></span>
-<span id="cb20-31"><a href="#cb20-31" aria-hidden="true" tabindex="-1"></a><span class="co">#   user = "JuanGonzalez", </span></span>
-<span id="cb20-32"><a href="#cb20-32" aria-hidden="true" tabindex="-1"></a><span class="co">#   password = "Gp7#vXq9Lz"</span></span>
-<span id="cb20-33"><a href="#cb20-33" aria-hidden="true" tabindex="-1"></a><span class="co"># )</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>builder <span class="ot">&lt;-</span> DSI<span class="sc">::</span><span class="fu">newDSLoginBuilder</span>()</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Server 1: France </span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>builder<span class="sc">$</span><span class="fu">append</span>(</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">server =</span> <span class="st">'France'</span>, </span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">url =</span> <span class="st">"https://opal-demo.obiba.org"</span>,</span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">user =</span> <span class="st">"dsuser"</span>, </span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">password =</span> <span class="st">"P@ssw0rd"</span></span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Server 2: Spain (ISGlobal)</span></span>
+<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a>builder<span class="sc">$</span><span class="fu">append</span>(</span>
+<span id="cb22-13"><a href="#cb22-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">server =</span> <span class="st">'ISGlobal'</span>, </span>
+<span id="cb22-14"><a href="#cb22-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">url =</span> <span class="st">"https://opal.isglobal.org/repo"</span>,</span>
+<span id="cb22-15"><a href="#cb22-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">user =</span> <span class="st">"invited"</span>, </span>
+<span id="cb22-16"><a href="#cb22-16" aria-hidden="true" tabindex="-1"></a>  <span class="at">password =</span> <span class="st">"12345678Aa@"</span></span>
+<span id="cb22-17"><a href="#cb22-17" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb22-18"><a href="#cb22-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-19"><a href="#cb22-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Server 3: UK (Imperial)</span></span>
+<span id="cb22-20"><a href="#cb22-20" aria-hidden="true" tabindex="-1"></a>builder<span class="sc">$</span><span class="fu">append</span>(</span>
+<span id="cb22-21"><a href="#cb22-21" aria-hidden="true" tabindex="-1"></a>  <span class="at">server =</span> <span class="st">"Imperial"</span>,</span>
+<span id="cb22-22"><a href="#cb22-22" aria-hidden="true" tabindex="-1"></a>  <span class="at">url =</span> <span class="st">"https://cadset.dsi.ic.ac.uk/"</span>,</span>
+<span id="cb22-23"><a href="#cb22-23" aria-hidden="true" tabindex="-1"></a>  <span class="at">user =</span> <span class="st">"jrgonzalez"</span>,</span>
+<span id="cb22-24"><a href="#cb22-24" aria-hidden="true" tabindex="-1"></a>  <span class="at">password =</span> <span class="st">"Cadset_test1!"</span></span>
+<span id="cb22-25"><a href="#cb22-25" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb22-26"><a href="#cb22-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-27"><a href="#cb22-27" aria-hidden="true" tabindex="-1"></a><span class="co"># Server 4: LEAD</span></span>
+<span id="cb22-28"><a href="#cb22-28" aria-hidden="true" tabindex="-1"></a><span class="co"># builder$append(</span></span>
+<span id="cb22-29"><a href="#cb22-29" aria-hidden="true" tabindex="-1"></a><span class="co">#   server = 'LEAD', </span></span>
+<span id="cb22-30"><a href="#cb22-30" aria-hidden="true" tabindex="-1"></a><span class="co">#   url = "https://ods.lbg.ac.at",</span></span>
+<span id="cb22-31"><a href="#cb22-31" aria-hidden="true" tabindex="-1"></a><span class="co">#   user = "JuanGonzalez", </span></span>
+<span id="cb22-32"><a href="#cb22-32" aria-hidden="true" tabindex="-1"></a><span class="co">#   password = "Gp7#vXq9Lz"</span></span>
+<span id="cb22-33"><a href="#cb22-33" aria-hidden="true" tabindex="-1"></a><span class="co"># )</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>For Groningen we need to connect through Molgenis and we require a personal token</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>token <span class="ot">&lt;-</span> <span class="fu">armadillo.get_token</span>(<span class="st">"https://cadsetgroningennl.molgeniscloud.org/"</span>)</span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Server 5: Groningen</span></span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>builder<span class="sc">$</span><span class="fu">append</span>(</span>
-<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">server =</span> <span class="st">"Groningen"</span>, </span>
-<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">url =</span> <span class="st">"https://cadsetgroningennl.molgeniscloud.org/"</span>, </span>
-<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">token =</span> token, </span>
-<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">driver =</span> <span class="st">"ArmadilloDriver"</span></span>
-<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>token <span class="ot">&lt;-</span> <span class="fu">armadillo.get_token</span>(<span class="st">"https://cadsetgroningennl.molgeniscloud.org/"</span>)</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Server 5: Groningen</span></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>builder<span class="sc">$</span><span class="fu">append</span>(</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">server =</span> <span class="st">"Groningen"</span>, </span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">url =</span> <span class="st">"https://cadsetgroningennl.molgeniscloud.org/"</span>, </span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">token =</span> token, </span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">driver =</span> <span class="st">"ArmadilloDriver"</span></span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Now we need to connect, referring to the login information in the data frame we have just created:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>logindata <span class="ot">&lt;-</span> builder<span class="sc">$</span><span class="fu">build</span>()</span>
-<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>conns <span class="ot">&lt;-</span> DSI<span class="sc">::</span><span class="fu">datashield.login</span>(<span class="at">logins =</span> logindata, </span>
-<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>                                     <span class="at">assign =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>logindata <span class="ot">&lt;-</span> builder<span class="sc">$</span><span class="fu">build</span>()</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>conns <span class="ot">&lt;-</span> <span class="fu">datashield.login</span>(<span class="at">logins =</span> logindata, <span class="at">assign =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>
 Logging into the collaborating servers</code></pre>
@@ -369,7 +489,7 @@ Logging into the collaborating servers</code></pre>
 <p>The ‘assign’ argument can be set to either ‘TRUE’ or ‘FALSE’. If set to ‘TRUE’, all the available variables within that table will be assigned to a serverside data frame and available to access. If you only need a small subset of available variables it can be preferable to set this to ‘FALSE’ and later use the function ‘datashield.assign’ to separately assign only the variables you need (as it is this case). The output of this box has useful progress bars which show the progress of connecting to studies, one by one.</p>
 <p>We can see the serverside doesn’t have any object by running:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.ls</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.ls</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>$France
 $France$environment.searched
@@ -392,44 +512,52 @@ $Imperial$environment.searched
 [1] "R_GlobalEnv"
 
 $Imperial$objects.found
+character(0)
+
+
+$Groningen
+$Groningen$environment.searched
+[1] "R_GlobalEnv"
+
+$Groningen$objects.found
 character(0)</code></pre>
 </div>
 </div>
-<p>We need to create the objects etither form tables (e.g.&nbsp;a data frame called <code>cadset</code> ) or resources.</p>
-<p>For ISGlobal, Imperial and Groningen we have tables</p>
+<p>We need to create the objects either form tables (e.g.&nbsp;a data frame called <code>cadset</code> ) or resources.</p>
+<p>In our case, we have set up all Opals having the simulated datasets as tables.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">datashield.assign.table</span>(conns[<span class="dv">2</span><span class="sc">:</span><span class="dv">4</span>], <span class="at">symbol =</span> <span class="st">"cadset"</span>, </span>
-<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>                        <span class="at">table =</span> <span class="fu">list</span>(</span>
-<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>                          <span class="at">ISGlobal =</span> <span class="st">"CADSET.cadset_four"</span>,</span>
-<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>                          <span class="at">Imperial =</span> <span class="st">"CADSET.cadset_six"</span></span>
-<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>                          <span class="co"># Groningen = "cad/folder/data"</span></span>
-<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>                        )</span>
-<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>                      )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">datashield.assign.table</span>(conns, <span class="at">symbol =</span> <span class="st">"cadset"</span>, </span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>                        <span class="at">table =</span> <span class="fu">list</span>(</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>                          <span class="at">France =</span> <span class="st">"CADSET-coh1.cadset_two"</span>,</span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>                          <span class="at">ISGlobal =</span> <span class="st">"CADSET.cadset_four"</span>,</span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>                          <span class="at">Imperial =</span> <span class="st">"CADSET.cadset_six"</span>,</span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>                          <span class="at">Groningen =</span> <span class="st">"cad/folder/data"</span>)</span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>                        )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>and France contains a resource</p>
+<p>NOTE: let us imagine that we have a resource rather than a table. Then, and France contains a resource</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">datashield.assign.resource</span>(</span>
-<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>  conns<span class="sc">$</span>France,</span>
-<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">symbol =</span> <span class="st">"resource"</span>,</span>
-<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">resource =</span> <span class="fu">list</span>(<span class="at">France =</span> <span class="st">"CADSET-coh1.cadset_1"</span>)</span>
-<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a><span class="fu">datashield.assign.expr</span>(</span>
-<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>  conns<span class="sc">$</span>France,</span>
-<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">symbol =</span> <span class="st">"cadset"</span>,</span>
-<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">expr =</span> <span class="fu">quote</span>(<span class="fu">as.resource.data.frame</span>(resource))</span>
-<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">datashield.assign.resource</span>(</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>  conns<span class="sc">$</span>France,</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">symbol =</span> <span class="st">"resource"</span>,</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">resource =</span> <span class="fu">list</span>(<span class="at">France =</span> <span class="st">"CADSET-coh1.cadset_1"</span>)</span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a><span class="fu">datashield.assign.expr</span>(</span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a>  conns<span class="sc">$</span>France,</span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">symbol =</span> <span class="st">"cadset"</span>,</span>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">expr =</span> <span class="fu">quote</span>(<span class="fu">as.resource.data.frame</span>(resource))</span>
+<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Now we can see that each server has the data in an object called <code>cadset</code></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.ls</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.ls</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>$France
 $France$environment.searched
 [1] "R_GlobalEnv"
 
 $France$objects.found
-[1] "cadset"   "resource"
+[1] "cadset"
 
 
 $ISGlobal
@@ -445,26 +573,66 @@ $Imperial$environment.searched
 [1] "R_GlobalEnv"
 
 $Imperial$objects.found
+[1] "cadset"
+
+
+$Groningen
+$Groningen$environment.searched
+[1] "R_GlobalEnv"
+
+$Groningen$objects.found
 [1] "cadset"</code></pre>
 </div>
 </div>
 <p>which is a data.fame</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.class</span>(<span class="st">"cadset"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.class</span>(<span class="st">"cadset"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>$France
-[1] "spec_tbl_df" "tbl_df"      "tbl"         "data.frame" 
+[1] "data.frame"
 
 $ISGlobal
 [1] "data.frame"
 
 $Imperial
+[1] "data.frame"
+
+$Groningen
 [1] "data.frame"</code></pre>
 </div>
 </div>
 <p>and the data.frame has these variables</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.colnames</span>(<span class="st">"cadset"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.colnames</span>(<span class="st">"cadset"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$France
+ [1] "cohort_cadset"          "malesex_cadset"         "age_cadset"            
+ [4] "fev1_cadset"            "fvc_cadset"             "ratio_cadset"          
+ [7] "eversmoker_cadset"      "smokerstatus_cadset"    "packyears_cadset"      
+[10] "height_cadset"          "weight_cadset"          "fev1pcpredicted_cadset"
+[13] "fvcpcpredicted_cadset"  "ratiounderfixed_cadset" "ratiounderlln_cadset"  
+
+$ISGlobal
+ [1] "cohort_cadset"          "malesex_cadset"         "age_cadset"            
+ [4] "fev1_cadset"            "fvc_cadset"             "ratio_cadset"          
+ [7] "eversmoker_cadset"      "smokerstatus_cadset"    "packyears_cadset"      
+[10] "height_cadset"          "weight_cadset"          "fev1pcpredicted_cadset"
+[13] "fvcpcpredicted_cadset"  "ratiounderfixed_cadset" "ratiounderlln_cadset"  
+
+$Imperial
+ [1] "cohort_cadset"          "malesex_cadset"         "age_cadset"            
+ [4] "fev1_cadset"            "fvc_cadset"             "ratio_cadset"          
+ [7] "eversmoker_cadset"      "smokerstatus_cadset"    "packyears_cadset"      
+[10] "height_cadset"          "weight_cadset"          "fev1pcpredicted_cadset"
+[13] "fvcpcpredicted_cadset"  "ratiounderfixed_cadset" "ratiounderlln_cadset"  
+
+$Groningen
+ [1] "cohort_cadset"          "malesex_cadset"         "age_cadset"            
+ [4] "fev1_cadset"            "fvc_cadset"             "ratio_cadset"          
+ [7] "eversmoker_cadset"      "smokerstatus_cadset"    "packyears_cadset"      
+[10] "height_cadset"          "weight_cadset"          "fev1pcpredicted_cadset"
+[13] "fvcpcpredicted_cadset"  "ratiounderfixed_cadset" "ratiounderlln_cadset"  </code></pre>
+</div>
 </div>
 <section id="section" class="level80">
 <p class="heading"></p>
@@ -475,10 +643,10 @@ $Imperial
 <p>There are many data exploration functions already implemented into DataSHIELD: let’s check it out at the wiki <a href="https://data2knowledge.atlassian.net/wiki/spaces/DSDEV/pages/2733244417/Version+6.2.0">https://data2knowledge.atlassian.net/wiki/spaces/DSDEV/pages/2733244417/Version+6.2.0</a></p>
 <p>Scroll down to “Data structure queries”. Let’s try out a few of these:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.dim</span>(<span class="at">x=</span><span class="st">"cadset"</span>, <span class="at">datasources =</span> conns)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.dim</span>(<span class="at">x=</span><span class="st">"cadset"</span>, <span class="at">datasources =</span> conns)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>$`dimensions of cadset in France`
-[1] 3000   15
+[1] 3150   15
 
 $`dimensions of cadset in ISGlobal`
 [1] 5500   15
@@ -486,23 +654,26 @@ $`dimensions of cadset in ISGlobal`
 $`dimensions of cadset in Imperial`
 [1] 3350   15
 
+$`dimensions of cadset in Groningen`
+[1] 2200   15
+
 $`dimensions of cadset in combined studies`
-[1] 11850    15</code></pre>
+[1] 14200    15</code></pre>
 </div>
 </div>
 <p>NOTE: writting <code>datasources = conns</code> is not required. This is just to emphasize that if you have several connections you need to specify which one is yours. By default, it missing it looks for your local environment</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "builder"   "conns"     "logindata"</code></pre>
+<pre><code>[1] "builder"   "conns"     "logindata" "token"    </code></pre>
 </div>
 </div>
 <p>So, this would also work</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.dim</span>(<span class="st">"cadset"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.dim</span>(<span class="st">"cadset"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>$`dimensions of cadset in France`
-[1] 3000   15
+[1] 3150   15
 
 $`dimensions of cadset in ISGlobal`
 [1] 5500   15
@@ -510,10 +681,42 @@ $`dimensions of cadset in ISGlobal`
 $`dimensions of cadset in Imperial`
 [1] 3350   15
 
+$`dimensions of cadset in Groningen`
+[1] 2200   15
+
 $`dimensions of cadset in combined studies`
-[1] 11850    15</code></pre>
+[1] 14200    15</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ds.colnames("cadset")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.colnames</span>(<span class="st">"cadset"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$France
+ [1] "cohort_cadset"          "malesex_cadset"         "age_cadset"            
+ [4] "fev1_cadset"            "fvc_cadset"             "ratio_cadset"          
+ [7] "eversmoker_cadset"      "smokerstatus_cadset"    "packyears_cadset"      
+[10] "height_cadset"          "weight_cadset"          "fev1pcpredicted_cadset"
+[13] "fvcpcpredicted_cadset"  "ratiounderfixed_cadset" "ratiounderlln_cadset"  
+
+$ISGlobal
+ [1] "cohort_cadset"          "malesex_cadset"         "age_cadset"            
+ [4] "fev1_cadset"            "fvc_cadset"             "ratio_cadset"          
+ [7] "eversmoker_cadset"      "smokerstatus_cadset"    "packyears_cadset"      
+[10] "height_cadset"          "weight_cadset"          "fev1pcpredicted_cadset"
+[13] "fvcpcpredicted_cadset"  "ratiounderfixed_cadset" "ratiounderlln_cadset"  
+
+$Imperial
+ [1] "cohort_cadset"          "malesex_cadset"         "age_cadset"            
+ [4] "fev1_cadset"            "fvc_cadset"             "ratio_cadset"          
+ [7] "eversmoker_cadset"      "smokerstatus_cadset"    "packyears_cadset"      
+[10] "height_cadset"          "weight_cadset"          "fev1pcpredicted_cadset"
+[13] "fvcpcpredicted_cadset"  "ratiounderfixed_cadset" "ratiounderlln_cadset"  
+
+$Groningen
+ [1] "cohort_cadset"          "malesex_cadset"         "age_cadset"            
+ [4] "fev1_cadset"            "fvc_cadset"             "ratio_cadset"          
+ [7] "eversmoker_cadset"      "smokerstatus_cadset"    "packyears_cadset"      
+[10] "height_cadset"          "weight_cadset"          "fev1pcpredicted_cadset"
+[13] "fvcpcpredicted_cadset"  "ratiounderfixed_cadset" "ratiounderlln_cadset"  </code></pre>
+</div>
 </div>
 <p>What it is <em>mandatory</em> is to write the name of the data.frame with ““.</p>
 <section id="were-going-to-be-focus-on-fev1." class="level3">
@@ -521,7 +724,7 @@ $`dimensions of cadset in combined studies`
 <p>This is a measure of HDL Cholesterol (aka the “good cholesterol” level)</p>
 <p>Let’s run some summary statistic commands</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.class</span>(<span class="at">x=</span><span class="st">'cadset$fev1_cadset'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.class</span>(<span class="at">x=</span><span class="st">'cadset$fev1_cadset'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>$France
 [1] "numeric"
@@ -530,12 +733,15 @@ $ISGlobal
 [1] "numeric"
 
 $Imperial
+[1] "numeric"
+
+$Groningen
 [1] "numeric"</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.length</span>(<span class="at">x=</span><span class="st">'cadset$fev1_cadset'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.length</span>(<span class="at">x=</span><span class="st">'cadset$fev1_cadset'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>$`length of cadset$fev1_cadset in France`
-[1] 3000
+[1] 3150
 
 $`length of cadset$fev1_cadset in ISGlobal`
 [1] 5500
@@ -543,46 +749,54 @@ $`length of cadset$fev1_cadset in ISGlobal`
 $`length of cadset$fev1_cadset in Imperial`
 [1] 3350
 
+$`length of cadset$fev1_cadset in Groningen`
+[1] 2200
+
 $`total length of cadset$fev1_cadset in all studies combined`
-[1] 11850</code></pre>
+[1] 14200</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.mean</span>(<span class="at">x=</span><span class="st">'cadset$fev1_cadset'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.mean</span>(<span class="at">x=</span><span class="st">'cadset$fev1_cadset'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>$Mean.by.Study
-         EstimatedMean Nmissing Nvalid Ntotal
-France        3827.003        0   3000   3000
-ISGlobal      3778.882        0   5500   5500
-Imperial      3805.334        0   3350   3350
+          EstimatedMean Nmissing Nvalid Ntotal
+France         3803.702        0   3150   3150
+ISGlobal       3778.882        0   5500   5500
+Imperial       3805.334        0   3350   3350
+Groningen      3705.382        0   2200   2200
 
 $Nstudies
-[1] 3
+[1] 4
 
 $ValidityMessage
-         ValidityMessage 
-France   "VALID ANALYSIS"
-ISGlobal "VALID ANALYSIS"
-Imperial "VALID ANALYSIS"</code></pre>
+          ValidityMessage 
+France    "VALID ANALYSIS"
+ISGlobal  "VALID ANALYSIS"
+Imperial  "VALID ANALYSIS"
+Groningen "VALID ANALYSIS"</code></pre>
 </div>
 </div>
 <p>What is this other function to obtain the mean? Let’s use the DataSHIELD function help documentation.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>?ds.quantileMean</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>?ds.quantileMean</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>starting httpd help server ... done</code></pre>
+</div>
 </div>
 <p>Now, putting into action some of what we’ve learned about the function arguments. NOTE: ‘split’ is in case you have data from different servers and you want to see the statistic one by one.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.quantileMean</span>(<span class="at">x=</span><span class="st">'cadset$fev1_cadset'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.quantileMean</span>(<span class="at">x=</span><span class="st">'cadset$fev1_cadset'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code> Quantiles of the pooled data</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>      5%      10%      25%      50%      75%      90%      95%     Mean 
-2596.920 2811.561 3195.781 3716.498 4370.422 4936.329 5221.392 3798.543 </code></pre>
+2577.688 2787.465 3176.761 3692.817 4351.901 4919.789 5209.225 3779.241 </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.quantileMean</span>(<span class="at">x=</span><span class="st">'cadset$fev1_cadset'</span>, <span class="at">type =</span> <span class="st">"split"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.quantileMean</span>(<span class="at">x=</span><span class="st">'cadset$fev1_cadset'</span>, <span class="at">type =</span> <span class="st">"split"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>$France
       5%      10%      25%      50%      75%      90%      95%     Mean 
-2650.000 2860.000 3220.000 3750.000 4390.000 4951.000 5200.000 3827.003 
+2614.500 2820.000 3200.000 3730.000 4360.000 4950.000 5210.000 3803.702 
 
 $ISGlobal
       5%      10%      25%      50%      75%      90%      95%     Mean 
@@ -590,53 +804,106 @@ $ISGlobal
 
 $Imperial
       5%      10%      25%      50%      75%      90%      95%     Mean 
-2610.000 2820.000 3200.000 3730.000 4370.000 4950.000 5210.000 3805.334 </code></pre>
+2610.000 2820.000 3200.000 3730.000 4370.000 4950.000 5210.000 3805.334 
+
+$Groningen
+      5%      10%      25%      50%      75%      90%      95%     Mean 
+2520.000 2710.000 3100.000 3590.000 4292.500 4830.000 5130.000 3705.382 </code></pre>
 </div>
 </div>
 <p>Trying to calculate the variance of FEV1:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>?ds.var</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a>?ds.var</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.var</span>(<span class="at">x =</span> <span class="st">'cadset$fev1_cadset'</span>, <span class="at">type =</span> <span class="st">"split"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.var</span>(<span class="at">x =</span> <span class="st">'cadset$fev1_cadset'</span>, <span class="at">type =</span> <span class="st">"split"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>$Variance.by.Study
-         EstimatedVar Nmissing Nvalid Ntotal
-France       646280.3        0   3000   3000
-ISGlobal     689287.2        0   5500   5500
-Imperial     678485.1        0   3350   3350
+          EstimatedVar Nmissing Nvalid Ntotal
+France        673482.0        0   3150   3150
+ISGlobal      689287.2        0   5500   5500
+Imperial      678485.1        0   3350   3350
+Groningen     678056.1        0   2200   2200
 
 $Nstudies
-[1] 3
+[1] 4
 
 $ValidityMessage
-         ValidityMessage 
-France   "VALID ANALYSIS"
-ISGlobal "VALID ANALYSIS"
-Imperial "VALID ANALYSIS"</code></pre>
+          ValidityMessage 
+France    "VALID ANALYSIS"
+ISGlobal  "VALID ANALYSIS"
+Imperial  "VALID ANALYSIS"
+Groningen "VALID ANALYSIS"</code></pre>
 </div>
 </div>
 <p>Can we store the results calculated from a DataSHIELD analysis in a local R session?</p>
 <p>Yes- the output of aggregate functions are always R objects, hence can be stored.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>a<span class="ot">&lt;-</span><span class="fu">ds.var</span>(<span class="at">x =</span> <span class="st">'cadset$fev1_cadset'</span>, <span class="at">type =</span> <span class="st">"split"</span>)[[<span class="dv">1</span>]]</span>
-<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a>a</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>a<span class="ot">&lt;-</span><span class="fu">ds.var</span>(<span class="at">x =</span> <span class="st">'cadset$fev1_cadset'</span>, <span class="at">type =</span> <span class="st">"split"</span>)[[<span class="dv">1</span>]]</span>
+<span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a>a</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>         EstimatedVar Nmissing Nvalid Ntotal
-France       646280.3        0   3000   3000
-ISGlobal     689287.2        0   5500   5500
-Imperial     678485.1        0   3350   3350</code></pre>
+<pre><code>          EstimatedVar Nmissing Nvalid Ntotal
+France        673482.0        0   3150   3150
+ISGlobal      689287.2        0   5500   5500
+Imperial      678485.1        0   3350   3350
+Groningen     678056.1        0   2200   2200</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a>b<span class="ot">&lt;-</span><span class="fu">ds.var</span>(<span class="at">x =</span> <span class="st">'cadset$fev1_cadset'</span>, <span class="at">type =</span> <span class="st">"split"</span>)[[<span class="dv">1</span>]][[<span class="dv">1</span>,<span class="dv">1</span>]]</span>
-<span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a>b</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb62"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a>b<span class="ot">&lt;-</span><span class="fu">ds.var</span>(<span class="at">x =</span> <span class="st">'cadset$fev1_cadset'</span>, <span class="at">type =</span> <span class="st">"split"</span>)[[<span class="dv">1</span>]][[<span class="dv">1</span>,<span class="dv">1</span>]]</span>
+<span id="cb62-2"><a href="#cb62-2" aria-hidden="true" tabindex="-1"></a>b</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 646280.3</code></pre>
+<pre><code>[1] 673482</code></pre>
 </div>
 </div>
 <p>The square brackets are because we are trying to access an element of a list- which is the R object that DataSHIELD aggregate functions output as.</p>
 <p>Factor variables visualize by simply writting</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ds.table("cadset$malesex_cadset")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb64"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.table</span>(<span class="st">"cadset$malesex_cadset"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+ Data in all studies were valid 
+
+Study 1 :  No errors reported from this study
+Study 2 :  No errors reported from this study
+Study 3 :  No errors reported from this study
+Study 4 :  No errors reported from this study</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$output.list
+$output.list$TABLE_rvar.by.study_row.props
+                     study
+cadset$malesex_cadset    France  ISGlobal  Imperial Groningen
+                   0  0.2191686 0.4020163 0.2340837 0.1447314
+                   1  0.2246012 0.3720362 0.2378215 0.1655410
+                   NA       NaN       NaN       NaN       NaN
+
+$output.list$TABLE_rvar.by.study_col.props
+                     study
+cadset$malesex_cadset    France  ISGlobal  Imperial Groningen
+                   0  0.5038095 0.5292727 0.5059701 0.4763636
+                   1  0.4961905 0.4707273 0.4940299 0.5236364
+                   NA 0.0000000 0.0000000 0.0000000 0.0000000
+
+$output.list$TABLE_rvar.by.study_counts
+                     study
+cadset$malesex_cadset France ISGlobal Imperial Groningen
+                   0    1587     2911     1695      1048
+                   1    1563     2589     1655      1152
+                   NA      0        0        0         0
+
+$output.list$TABLES.COMBINED_all.sources_proportions
+cadset$malesex_cadset
+   0    1   NA 
+0.51 0.49 0.00 
+
+$output.list$TABLES.COMBINED_all.sources_counts
+cadset$malesex_cadset
+   0    1   NA 
+7241 6959    0 
+
+
+$validity.message
+[1] "Data in all studies were valid"</code></pre>
+</div>
 </div>
 </section>
 <section id="using-dshelper-to-retrieve-statistics-in-a-neater-format." class="level3">
@@ -644,16 +911,16 @@ Imperial     678485.1        0   3350   3350</code></pre>
 <p>As you may have noticed, some operations which are more straightforward in R can be more complicated in datashield. To help with this, the dsHelper package allows you to do some common operations in fewer lines of code. DsHelper is an entirely serverside package - it contains only clientside functions which call DataSHIELD functions serverside.</p>
 <p>We have seen datashield has a range of functions to retrieve statistics, but is limited in that (i) you need to use different functions for different statistics, (ii) you can only get stats for one variable at a time. dh.GetStats returns many useful stats in a tibble, and allows you to retrieve stats for multiple variables at a time.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>neat_stats <span class="ot">&lt;-</span> <span class="fu">dh.getStats</span>(</span>
-<span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">df =</span> <span class="st">"cadset"</span>,</span>
-<span id="cb60-3"><a href="#cb60-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">vars =</span> <span class="fu">c</span>(<span class="st">"age_cadset"</span>, <span class="st">"fev1_cadset"</span>, <span class="st">"fvc_cadset"</span>, <span class="st">"packyears_cadset"</span>,</span>
-<span id="cb60-4"><a href="#cb60-4" aria-hidden="true" tabindex="-1"></a>           <span class="st">"eversmoker_cadset"</span>, <span class="st">"fev1pcpredicted_cadset"</span>))</span>
-<span id="cb60-5"><a href="#cb60-5" aria-hidden="true" tabindex="-1"></a>           </span>
-<span id="cb60-6"><a href="#cb60-6" aria-hidden="true" tabindex="-1"></a>neat_stats</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb67"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a>neat_stats <span class="ot">&lt;-</span> <span class="fu">dh.getStats</span>(</span>
+<span id="cb67-2"><a href="#cb67-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">df =</span> <span class="st">"cadset"</span>,</span>
+<span id="cb67-3"><a href="#cb67-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">vars =</span> <span class="fu">c</span>(<span class="st">"age_cadset"</span>, <span class="st">"fev1_cadset"</span>, <span class="st">"fvc_cadset"</span>, <span class="st">"packyears_cadset"</span>,</span>
+<span id="cb67-4"><a href="#cb67-4" aria-hidden="true" tabindex="-1"></a>           <span class="st">"eversmoker_cadset"</span>, <span class="st">"fev1pcpredicted_cadset"</span>))</span>
+<span id="cb67-5"><a href="#cb67-5" aria-hidden="true" tabindex="-1"></a>           </span>
+<span id="cb67-6"><a href="#cb67-6" aria-hidden="true" tabindex="-1"></a>neat_stats</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Let us see what happened:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb61"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a><span class="fu">datashield.errors</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb68"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="fu">datashield.errors</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <section id="section-1" class="level80">
 <p class="heading"></p>
@@ -666,14 +933,14 @@ Imperial     678485.1        0   3350   3350</code></pre>
 <p>The reason for this is that some calculations could be highly disclosive- and if such data were transmitted to the analyst, with not much effort at all, with an inverse function, the analyst could work out exactly what the raw data are- and thus the data’s privacy is broken!</p>
 <p>To demonstrate:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb62"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.ls</span>(<span class="at">datasources =</span> conns)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb69"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.ls</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>$France
 $France$environment.searched
 [1] "R_GlobalEnv"
 
 $France$objects.found
-[1] "cadset"   "resource"
+[1] "cadset"
 
 
 $ISGlobal
@@ -689,17 +956,25 @@ $Imperial$environment.searched
 [1] "R_GlobalEnv"
 
 $Imperial$objects.found
+[1] "cadset"
+
+
+$Groningen
+$Groningen$environment.searched
+[1] "R_GlobalEnv"
+
+$Groningen$objects.found
 [1] "cadset"</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb64"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.log</span>(<span class="at">x=</span><span class="st">'cadset$fev1_cadset'</span>, <span class="at">newobj=</span><span class="st">'hdl_log'</span>, <span class="at">datasources =</span> conns)</span>
-<span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.ls</span>(<span class="at">datasources =</span> conns)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb71"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.log</span>(<span class="at">x=</span><span class="st">'cadset$fev1_cadset'</span>, <span class="at">newobj=</span><span class="st">'fev1_log'</span>)</span>
+<span id="cb71-2"><a href="#cb71-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.ls</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>$France
 $France$environment.searched
 [1] "R_GlobalEnv"
 
 $France$objects.found
-[1] "cadset"   "hdl_log"  "resource"
+[1] "cadset"   "fev1_log"
 
 
 $ISGlobal
@@ -707,7 +982,7 @@ $ISGlobal$environment.searched
 [1] "R_GlobalEnv"
 
 $ISGlobal$objects.found
-[1] "cadset"  "hdl_log"
+[1] "cadset"   "fev1_log"
 
 
 $Imperial
@@ -715,39 +990,67 @@ $Imperial$environment.searched
 [1] "R_GlobalEnv"
 
 $Imperial$objects.found
-[1] "cadset"  "hdl_log"</code></pre>
+[1] "cadset"   "fev1_log"
+
+
+$Groningen
+$Groningen$environment.searched
+[1] "R_GlobalEnv"
+
+$Groningen$objects.found
+[1] "cadset"   "fev1_log"</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb66"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.mean</span>(<span class="at">x=</span><span class="st">"hdl_log"</span>,<span class="at">datasources=</span> conns)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb73"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.mean</span>(<span class="at">x=</span><span class="st">"fev1_log"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>$Mean.by.Study
-         EstimatedMean Nmissing Nvalid Ntotal
-France        8.227583        0   3000   3000
-ISGlobal      8.212621        0   5500   5500
-Imperial      8.220318        0   3350   3350
+          EstimatedMean Nmissing Nvalid Ntotal
+France         8.220026        0   3150   3150
+ISGlobal       8.212621        0   5500   5500
+Imperial       8.220318        0   3350   3350
+Groningen      8.192640        0   2200   2200
 
 $Nstudies
-[1] 3
+[1] 4
 
 $ValidityMessage
-         ValidityMessage 
-France   "VALID ANALYSIS"
-ISGlobal "VALID ANALYSIS"
-Imperial "VALID ANALYSIS"</code></pre>
+          ValidityMessage 
+France    "VALID ANALYSIS"
+ISGlobal  "VALID ANALYSIS"
+Imperial  "VALID ANALYSIS"
+Groningen "VALID ANALYSIS"</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb68"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ds.mean(x="D$hdl",datasources= conns)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb75"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.mean</span>(<span class="at">x=</span><span class="st">"cadset$fev1_cadset"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$Mean.by.Study
+          EstimatedMean Nmissing Nvalid Ntotal
+France         3803.702        0   3150   3150
+ISGlobal       3778.882        0   5500   5500
+Imperial       3805.334        0   3350   3350
+Groningen      3705.382        0   2200   2200
+
+$Nstudies
+[1] 4
+
+$ValidityMessage
+          ValidityMessage 
+France    "VALID ANALYSIS"
+ISGlobal  "VALID ANALYSIS"
+Imperial  "VALID ANALYSIS"
+Groningen "VALID ANALYSIS"</code></pre>
+</div>
 </div>
 <p>The second “ds.mean” shows that the mean of the logged values are definitely smaller, by about the right amount. The DataSHIELD log function has worked.</p>
 <p>There is another DataSHIELD assign function that can be used for data transformations - a square root function. Let’s test again:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb69"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.sqrt</span>(<span class="at">x=</span><span class="st">'cadset$fev1_cadset'</span>, <span class="at">newobj=</span><span class="st">'fev1_sqrt'</span>)</span>
-<span id="cb69-2"><a href="#cb69-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.ls</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb77"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.sqrt</span>(<span class="at">x=</span><span class="st">'cadset$fev1_cadset'</span>, <span class="at">newobj=</span><span class="st">'fev1_sqrt'</span>)</span>
+<span id="cb77-2"><a href="#cb77-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.ls</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>$France
 $France$environment.searched
 [1] "R_GlobalEnv"
 
 $France$objects.found
-[1] "cadset"    "fev1_sqrt" "hdl_log"   "resource" 
+[1] "cadset"    "fev1_log"  "fev1_sqrt"
 
 
 $ISGlobal
@@ -755,7 +1058,7 @@ $ISGlobal$environment.searched
 [1] "R_GlobalEnv"
 
 $ISGlobal$objects.found
-[1] "cadset"    "fev1_sqrt" "hdl_log"  
+[1] "cadset"    "fev1_log"  "fev1_sqrt"
 
 
 $Imperial
@@ -763,48 +1066,100 @@ $Imperial$environment.searched
 [1] "R_GlobalEnv"
 
 $Imperial$objects.found
-[1] "cadset"    "fev1_sqrt" "hdl_log"  </code></pre>
+[1] "cadset"    "fev1_log"  "fev1_sqrt"
+
+
+$Groningen
+$Groningen$environment.searched
+[1] "R_GlobalEnv"
+
+$Groningen$objects.found
+[1] "cadset"    "fev1_log"  "fev1_sqrt"</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb71"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.mean</span>(<span class="at">x=</span><span class="st">"fev1_sqrt"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb79"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.mean</span>(<span class="at">x=</span><span class="st">"fev1_sqrt"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>$Mean.by.Study
-         EstimatedMean Nmissing Nvalid Ntotal
-France        61.52198        0   3000   3000
-ISGlobal      61.10012        0   5500   5500
-Imperial      61.32453        0   3350   3350
+          EstimatedMean Nmissing Nvalid Ntotal
+France         61.31350        0   3150   3150
+ISGlobal       61.10012        0   5500   5500
+Imperial       61.32453        0   3350   3350
+Groningen      60.49695        0   2200   2200
 
 $Nstudies
-[1] 3
+[1] 4
 
 $ValidityMessage
-         ValidityMessage 
-France   "VALID ANALYSIS"
-ISGlobal "VALID ANALYSIS"
-Imperial "VALID ANALYSIS"</code></pre>
+          ValidityMessage 
+France    "VALID ANALYSIS"
+ISGlobal  "VALID ANALYSIS"
+Imperial  "VALID ANALYSIS"
+Groningen "VALID ANALYSIS"</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb73"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.mean</span>(<span class="at">x=</span><span class="st">"cadset$fev1_cadset"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb81"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb81-1"><a href="#cb81-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.mean</span>(<span class="at">x=</span><span class="st">"cadset$fev1_cadset"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>$Mean.by.Study
-         EstimatedMean Nmissing Nvalid Ntotal
-France        3827.003        0   3000   3000
-ISGlobal      3778.882        0   5500   5500
-Imperial      3805.334        0   3350   3350
+          EstimatedMean Nmissing Nvalid Ntotal
+France         3803.702        0   3150   3150
+ISGlobal       3778.882        0   5500   5500
+Imperial       3805.334        0   3350   3350
+Groningen      3705.382        0   2200   2200
 
 $Nstudies
-[1] 3
+[1] 4
 
 $ValidityMessage
-         ValidityMessage 
-France   "VALID ANALYSIS"
-ISGlobal "VALID ANALYSIS"
-Imperial "VALID ANALYSIS"</code></pre>
+          ValidityMessage 
+France    "VALID ANALYSIS"
+ISGlobal  "VALID ANALYSIS"
+Imperial  "VALID ANALYSIS"
+Groningen "VALID ANALYSIS"</code></pre>
 </div>
 </div>
 <p>These new objects are not attached to a dataframe. Use the help function to find out about the ds.dataFrame function, which can be used to combine objects.</p>
 <p>Now join “fev1_sqrt” and “fev1_log” to the dataframe “cadset”.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb75"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ds.dataFrame(c("cadset", "fev1_sqrt", "fev1_log"), newobj = "cadset")</span></span>
-<span id="cb75-2"><a href="#cb75-2" aria-hidden="true" tabindex="-1"></a><span class="co"># ds.colnames("cadset")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb83"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb83-1"><a href="#cb83-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.dataFrame</span>(<span class="fu">c</span>(<span class="st">"cadset"</span>, <span class="st">"fev1_sqrt"</span>, <span class="st">"fev1_log"</span>), <span class="at">newobj =</span> <span class="st">"cadset"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$is.object.created
+[1] "A data object &lt;cadset&gt; has been created in all specified data sources"
+
+$validity.check
+[1] "&lt;cadset&gt; appears valid in all sources"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb85"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb85-1"><a href="#cb85-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.colnames</span>(<span class="st">"cadset"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$France
+ [1] "cohort_cadset"          "malesex_cadset"         "age_cadset"            
+ [4] "fev1_cadset"            "fvc_cadset"             "ratio_cadset"          
+ [7] "eversmoker_cadset"      "smokerstatus_cadset"    "packyears_cadset"      
+[10] "height_cadset"          "weight_cadset"          "fev1pcpredicted_cadset"
+[13] "fvcpcpredicted_cadset"  "ratiounderfixed_cadset" "ratiounderlln_cadset"  
+[16] "fev1_sqrt"              "fev1_log"              
+
+$ISGlobal
+ [1] "cohort_cadset"          "malesex_cadset"         "age_cadset"            
+ [4] "fev1_cadset"            "fvc_cadset"             "ratio_cadset"          
+ [7] "eversmoker_cadset"      "smokerstatus_cadset"    "packyears_cadset"      
+[10] "height_cadset"          "weight_cadset"          "fev1pcpredicted_cadset"
+[13] "fvcpcpredicted_cadset"  "ratiounderfixed_cadset" "ratiounderlln_cadset"  
+[16] "fev1_sqrt"              "fev1_log"              
+
+$Imperial
+ [1] "cohort_cadset"          "malesex_cadset"         "age_cadset"            
+ [4] "fev1_cadset"            "fvc_cadset"             "ratio_cadset"          
+ [7] "eversmoker_cadset"      "smokerstatus_cadset"    "packyears_cadset"      
+[10] "height_cadset"          "weight_cadset"          "fev1pcpredicted_cadset"
+[13] "fvcpcpredicted_cadset"  "ratiounderfixed_cadset" "ratiounderlln_cadset"  
+[16] "fev1_sqrt"              "fev1_log"              
+
+$Groningen
+ [1] "cohort_cadset"          "malesex_cadset"         "age_cadset"            
+ [4] "fev1_cadset"            "fvc_cadset"             "ratio_cadset"          
+ [7] "eversmoker_cadset"      "smokerstatus_cadset"    "packyears_cadset"      
+[10] "height_cadset"          "weight_cadset"          "fev1pcpredicted_cadset"
+[13] "fvcpcpredicted_cadset"  "ratiounderfixed_cadset" "ratiounderlln_cadset"  
+[16] "fev1_sqrt"              "fev1_log"              </code></pre>
+</div>
 </div>
 <p><strong>EXERCISE: Using some of the functions above, explore the distribution of the variable “packyears_cadset” in dataframe “cadset”.</strong></p>
 <p>Here you see this has returned a list of two tibbles separated into continuous and categorical information. For the categorical variables info is returned on ns, percentages and missingness within each category, whilst for continuous variables info is returned on mean, standard deviation, quantiles and also missingness.</p>
@@ -815,11 +1170,107 @@ Imperial "VALID ANALYSIS"</code></pre>
 <p>You may wish to use it to:</p>
 <p>Subset a column of data by its “Class” Subset a dataframe to remove any “NA”s Subset a numeric column of a dataframe using a Boolean inequalilty</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb76"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb76-1"><a href="#cb76-1" aria-hidden="true" tabindex="-1"></a><span class="co"># first find the column name you wish to refer to</span></span>
-<span id="cb76-2"><a href="#cb76-2" aria-hidden="true" tabindex="-1"></a><span class="co"># ds.colnames(x="cadset")</span></span>
-<span id="cb76-3"><a href="#cb76-3" aria-hidden="true" tabindex="-1"></a><span class="co"># then check which levels you need to apply a boolean operator to:</span></span>
-<span id="cb76-4"><a href="#cb76-4" aria-hidden="true" tabindex="-1"></a><span class="co"># ds.levels(x="cadset$malesex_cadset")</span></span>
-<span id="cb76-5"><a href="#cb76-5" aria-hidden="true" tabindex="-1"></a>?ds.dataFrameSubset</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb87"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb87-1"><a href="#cb87-1" aria-hidden="true" tabindex="-1"></a><span class="co"># first find the column name you wish to refer to</span></span>
+<span id="cb87-2"><a href="#cb87-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.colnames</span>(<span class="at">x=</span><span class="st">"cadset"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$France
+ [1] "cohort_cadset"          "malesex_cadset"         "age_cadset"            
+ [4] "fev1_cadset"            "fvc_cadset"             "ratio_cadset"          
+ [7] "eversmoker_cadset"      "smokerstatus_cadset"    "packyears_cadset"      
+[10] "height_cadset"          "weight_cadset"          "fev1pcpredicted_cadset"
+[13] "fvcpcpredicted_cadset"  "ratiounderfixed_cadset" "ratiounderlln_cadset"  
+[16] "fev1_sqrt"              "fev1_log"              
+
+$ISGlobal
+ [1] "cohort_cadset"          "malesex_cadset"         "age_cadset"            
+ [4] "fev1_cadset"            "fvc_cadset"             "ratio_cadset"          
+ [7] "eversmoker_cadset"      "smokerstatus_cadset"    "packyears_cadset"      
+[10] "height_cadset"          "weight_cadset"          "fev1pcpredicted_cadset"
+[13] "fvcpcpredicted_cadset"  "ratiounderfixed_cadset" "ratiounderlln_cadset"  
+[16] "fev1_sqrt"              "fev1_log"              
+
+$Imperial
+ [1] "cohort_cadset"          "malesex_cadset"         "age_cadset"            
+ [4] "fev1_cadset"            "fvc_cadset"             "ratio_cadset"          
+ [7] "eversmoker_cadset"      "smokerstatus_cadset"    "packyears_cadset"      
+[10] "height_cadset"          "weight_cadset"          "fev1pcpredicted_cadset"
+[13] "fvcpcpredicted_cadset"  "ratiounderfixed_cadset" "ratiounderlln_cadset"  
+[16] "fev1_sqrt"              "fev1_log"              
+
+$Groningen
+ [1] "cohort_cadset"          "malesex_cadset"         "age_cadset"            
+ [4] "fev1_cadset"            "fvc_cadset"             "ratio_cadset"          
+ [7] "eversmoker_cadset"      "smokerstatus_cadset"    "packyears_cadset"      
+[10] "height_cadset"          "weight_cadset"          "fev1pcpredicted_cadset"
+[13] "fvcpcpredicted_cadset"  "ratiounderfixed_cadset" "ratiounderlln_cadset"  
+[16] "fev1_sqrt"              "fev1_log"              </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb89"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb89-1"><a href="#cb89-1" aria-hidden="true" tabindex="-1"></a><span class="co"># then check which levels you need to apply a boolean operator to:</span></span>
+<span id="cb89-2"><a href="#cb89-2" aria-hidden="true" tabindex="-1"></a><span class="co"># first we need to be sure the variable is having the same class in all servers</span></span>
+<span id="cb89-3"><a href="#cb89-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.class</span>(<span class="st">"cadset$malesex_cadset"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$France
+[1] "numeric"
+
+$ISGlobal
+[1] "numeric"
+
+$Imperial
+[1] "numeric"
+
+$Groningen
+[1] "integer"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb91"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb91-1"><a href="#cb91-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.asFactor</span>(<span class="st">"cadset$malesex_cadset"</span>, <span class="st">"sex"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$all.unique.levels
+[1] "0" "1"
+
+$return.message
+[1] "Data object &lt;sex&gt; correctly created in all specified data sources"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb93"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb93-1"><a href="#cb93-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.dataFrame</span>(<span class="fu">c</span>(<span class="st">"cadset"</span>, <span class="st">"sex"</span>), <span class="at">newobj =</span> <span class="st">"cadset"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$is.object.created
+[1] "A data object &lt;cadset&gt; has been created in all specified data sources"
+
+$validity.check
+[1] "&lt;cadset&gt; appears valid in all sources"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb95"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb95-1"><a href="#cb95-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.levels</span>(<span class="at">x=</span><span class="st">"cadset$sex"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$France
+$France$Levels
+[1] "0" "1"
+
+$France$ValidityMessage
+[1] "VALID ANALYSIS"
+
+
+$ISGlobal
+$ISGlobal$Levels
+[1] "0" "1"
+
+$ISGlobal$ValidityMessage
+[1] "VALID ANALYSIS"
+
+
+$Imperial
+$Imperial$Levels
+[1] "0" "1"
+
+$Imperial$ValidityMessage
+[1] "VALID ANALYSIS"
+
+
+$Groningen
+$Groningen$Levels
+[1] "0" "1"
+
+$Groningen$ValidityMessage
+[1] "VALID ANALYSIS"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb97"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb97-1"><a href="#cb97-1" aria-hidden="true" tabindex="-1"></a>?ds.dataFrameSubset</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="data-manipulation-with-dshelper" class="level2">
@@ -828,11 +1279,11 @@ Imperial "VALID ANALYSIS"</code></pre>
 <section id="create-a-subset-of-columns-by-a-vector-of-column-names" class="level3">
 <h3 class="anchored" data-anchor-id="create-a-subset-of-columns-by-a-vector-of-column-names">Create a subset of columns by a vector of column names</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb77"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dh.dropCols</span>(</span>
-<span id="cb77-2"><a href="#cb77-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">df =</span> <span class="st">"cadset"</span>, </span>
-<span id="cb77-3"><a href="#cb77-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">vars =</span> <span class="fu">c</span>(<span class="st">"cohort_cadset"</span>, <span class="st">"age_cadset"</span>), </span>
-<span id="cb77-4"><a href="#cb77-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"keep"</span>,</span>
-<span id="cb77-5"><a href="#cb77-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">new_obj =</span> <span class="st">"df_subset"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb98"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb98-1"><a href="#cb98-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dh.dropCols</span>(</span>
+<span id="cb98-2"><a href="#cb98-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">df =</span> <span class="st">"cadset"</span>, </span>
+<span id="cb98-3"><a href="#cb98-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">vars =</span> <span class="fu">c</span>(<span class="st">"cohort_cadset"</span>, <span class="st">"age_cadset"</span>), </span>
+<span id="cb98-4"><a href="#cb98-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"keep"</span>,</span>
+<span id="cb98-5"><a href="#cb98-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">new_obj =</span> <span class="st">"df_subset"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: `dh.dropCols()` was deprecated in dsHelper 1.6.0.
 ℹ Please use `dsTidyverseClient::ds.select()` instead.</code></pre>
@@ -859,9 +1310,17 @@ $Imperial$is.object.created
 [1] "A data object &lt;df_subset&gt; has been created in all specified data sources"
 
 $Imperial$validity.check
+[1] "&lt;df_subset&gt; appears valid in all sources"
+
+
+$Groningen
+$Groningen$is.object.created
+[1] "A data object &lt;df_subset&gt; has been created in all specified data sources"
+
+$Groningen$validity.check
 [1] "&lt;df_subset&gt; appears valid in all sources"</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb80"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb80-1"><a href="#cb80-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.colnames</span>(<span class="st">"df_subset"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb101"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb101-1"><a href="#cb101-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.colnames</span>(<span class="st">"df_subset"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>$France
 [1] "cohort_cadset" "age_cadset"   
@@ -870,6 +1329,9 @@ $ISGlobal
 [1] "cohort_cadset" "age_cadset"   
 
 $Imperial
+[1] "cohort_cadset" "age_cadset"   
+
+$Groningen
 [1] "cohort_cadset" "age_cadset"   </code></pre>
 </div>
 </div>
@@ -877,15 +1339,57 @@ $Imperial
 <section id="rename-variables" class="level3">
 <h3 class="anchored" data-anchor-id="rename-variables">Rename variables</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb82"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb82-1"><a href="#cb82-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dh.renameVars</span>(</span>
-<span id="cb82-2"><a href="#cb82-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">df =</span> <span class="st">"cadset"</span>, </span>
-<span id="cb82-3"><a href="#cb82-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">current_names =</span> <span class="fu">c</span>(<span class="st">"fev1_cadset"</span>, <span class="st">"age_cadset"</span>),</span>
-<span id="cb82-4"><a href="#cb82-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">new_names =</span> <span class="fu">c</span>(<span class="st">"fev1"</span>, <span class="st">"age"</span>))</span>
-<span id="cb82-5"><a href="#cb82-5" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb82-6"><a href="#cb82-6" aria-hidden="true" tabindex="-1"></a><span class="co"># ds.colnames("cadset")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb103"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb103-1"><a href="#cb103-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dh.renameVars</span>(</span>
+<span id="cb103-2"><a href="#cb103-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">df =</span> <span class="st">"cadset"</span>, </span>
+<span id="cb103-3"><a href="#cb103-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">current_names =</span> <span class="fu">c</span>(<span class="st">"fev1_cadset"</span>, <span class="st">"age_cadset"</span>),</span>
+<span id="cb103-4"><a href="#cb103-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">new_names =</span> <span class="fu">c</span>(<span class="st">"fev1"</span>, <span class="st">"age"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: `dh.renameVars()` was deprecated in dsHelper 1.6.0.
+ℹ Please use `dsTidyverseClient::ds.rename()` instead.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: `dh.tidyEnv()` was deprecated in dsHelper 1.6.0.
+ℹ Please use `dsBaseClient::ds.rm()` instead.
+ℹ The deprecated feature was likely used in the dsHelper package.
+  Please report the issue at
+  &lt;https://github.com/lifecycle-project/ds-helper/issues/&gt;.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb106"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb106-1"><a href="#cb106-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.colnames</span>(<span class="st">"cadset"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$France
+ [1] "cohort_cadset"          "malesex_cadset"         "fvc_cadset"            
+ [4] "ratio_cadset"           "eversmoker_cadset"      "smokerstatus_cadset"   
+ [7] "packyears_cadset"       "height_cadset"          "weight_cadset"         
+[10] "fev1pcpredicted_cadset" "fvcpcpredicted_cadset"  "ratiounderfixed_cadset"
+[13] "ratiounderlln_cadset"   "fev1_sqrt"              "fev1_log"              
+[16] "sex"                    "fev1"                   "age"                   
+
+$ISGlobal
+ [1] "cohort_cadset"          "malesex_cadset"         "fvc_cadset"            
+ [4] "ratio_cadset"           "eversmoker_cadset"      "smokerstatus_cadset"   
+ [7] "packyears_cadset"       "height_cadset"          "weight_cadset"         
+[10] "fev1pcpredicted_cadset" "fvcpcpredicted_cadset"  "ratiounderfixed_cadset"
+[13] "ratiounderlln_cadset"   "fev1_sqrt"              "fev1_log"              
+[16] "sex"                    "fev1"                   "age"                   
+
+$Imperial
+ [1] "cohort_cadset"          "malesex_cadset"         "fvc_cadset"            
+ [4] "ratio_cadset"           "eversmoker_cadset"      "smokerstatus_cadset"   
+ [7] "packyears_cadset"       "height_cadset"          "weight_cadset"         
+[10] "fev1pcpredicted_cadset" "fvcpcpredicted_cadset"  "ratiounderfixed_cadset"
+[13] "ratiounderlln_cadset"   "fev1_sqrt"              "fev1_log"              
+[16] "sex"                    "fev1"                   "age"                   
+
+$Groningen
+ [1] "cohort_cadset"          "malesex_cadset"         "fvc_cadset"            
+ [4] "ratio_cadset"           "eversmoker_cadset"      "smokerstatus_cadset"   
+ [7] "packyears_cadset"       "height_cadset"          "weight_cadset"         
+[10] "fev1pcpredicted_cadset" "fvcpcpredicted_cadset"  "ratiounderfixed_cadset"
+[13] "ratiounderlln_cadset"   "fev1_sqrt"              "fev1_log"              
+[16] "sex"                    "fev1"                   "age"                   </code></pre>
+</div>
 </div>
 <p>There are many more dsHelper functions designed to make common operations easier in datashield, check out the vignettes at: <a href="https://github.com/timcadman/ds-helper/blob/master/vignettes/ds-helper-main-vignette.Rmd">https://github.com/timcadman/ds-helper/blob/master/vignettes/ds-helper-main-vignette.Rmd</a></p>
-<p><strong>EXERCISE: try some of them (Transforming continuous variable to interquartile range; use dh.getStats(), …)</strong></p>
 <section id="section-2" class="level80">
 <p class="heading"></p>
 </section>
@@ -899,8 +1403,128 @@ $Imperial
 <p>Firstly, histograms give a good sense of how one variable is distributed. But no individual points are disclosed because values are “binned” into groups of a similar magnitude, disguising what each one actually is. We protect privacy by removing bins with low counts (below specific threshold). If you have a symmetric distribution, you may find some things aren’t observed at the extreme ends.</p>
 <p>Let’s create a histogram of the variable we’ve been investigating for much of this study: FEV1 (now called “fev1”).</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb83"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb83-1"><a href="#cb83-1" aria-hidden="true" tabindex="-1"></a>?ds.histogram</span>
-<span id="cb83-2"><a href="#cb83-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.histogram</span>(<span class="at">x=</span><span class="st">'cadset$fev1'</span>, <span class="at">datasources =</span> conns)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb108"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb108-1"><a href="#cb108-1" aria-hidden="true" tabindex="-1"></a>?ds.histogram</span>
+<span id="cb108-2"><a href="#cb108-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.histogram</span>(<span class="at">x=</span><span class="st">'cadset$fev1'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: France: 0 invalid cells</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: ISGlobal: 0 invalid cells</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Imperial: 1 invalid cells</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Groningen: 0 invalid cells</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="DataSHIELD_workshop_CADSET_files/figure-html/unnamed-chunk-33-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[[1]]
+$breaks
+ [1] 1144.323 1784.411 2424.499 3064.587 3704.675 4344.762 4984.850 5624.938
+ [9] 6265.026 6905.114 7545.201
+
+$counts
+ [1]   8  86 499 950 797 517 232  53   8   0
+
+$density
+ [1] 3.967709e-06 4.265288e-05 2.474859e-04 4.711655e-04 3.952831e-04
+ [6] 2.564132e-04 1.150636e-04 2.628608e-05 3.967709e-06 0.000000e+00
+
+$mids
+ [1] 1464.367 2104.455 2744.543 3384.631 4024.718 4664.806 5304.894 5944.982
+ [9] 6585.070 7225.158
+
+$xname
+[1] "xvect"
+
+$equidist
+[1] TRUE
+
+attr(,"class")
+[1] "histogram"
+
+[[2]]
+$breaks
+ [1] 1144.323 1784.411 2424.499 3064.587 3704.675 4344.762 4984.850 5624.938
+ [9] 6265.026 6905.114 7545.201
+
+$counts
+ [1]   15  171  895 1714 1307  902  397   87   12    0
+
+$density
+ [1] 4.260779e-06 4.857288e-05 2.542265e-04 4.868650e-04 3.712559e-04
+ [6] 2.562148e-04 1.127686e-04 2.471252e-05 3.408623e-06 0.000000e+00
+
+$mids
+ [1] 1464.367 2104.455 2744.543 3384.631 4024.718 4664.806 5304.894 5944.982
+ [9] 6585.070 7225.158
+
+$xname
+[1] "xvect"
+
+$equidist
+[1] TRUE
+
+attr(,"class")
+[1] "histogram"
+
+[[3]]
+$breaks
+ [1] 1144.323 1784.411 2424.499 3064.587 3704.675 4344.762 4984.850 5624.938
+ [9] 6265.026 6905.114 7545.201
+
+$counts
+ [1]    9   93  528 1012  842  553  248   56    8    0
+
+$density
+ [1] 4.197185e-06 4.337091e-05 2.462349e-04 4.719502e-04 3.926700e-04
+ [6] 2.578937e-04 1.156558e-04 2.611582e-05 3.730831e-06 0.000000e+00
+
+$mids
+ [1] 1464.367 2104.455 2744.543 3384.631 4024.718 4664.806 5304.894 5944.982
+ [9] 6585.070 7225.158
+
+$xname
+[1] "xvect"
+
+$equidist
+[1] TRUE
+
+attr(,"class")
+[1] "histogram"
+
+[[4]]
+$breaks
+ [1] 1144.323 1784.411 2424.499 3064.587 3704.675 4344.762 4984.850 5624.938
+ [9] 6265.026 6905.114 7545.201
+
+$counts
+ [1]   7  74 425 694 489 349 133  25   4   0
+
+$density
+ [1] 4.970909e-06 5.254961e-05 3.018052e-04 4.928301e-04 3.472535e-04
+ [6] 2.478353e-04 9.444727e-05 1.775325e-05 2.840519e-06 0.000000e+00
+
+$mids
+ [1] 1464.367 2104.455 2744.543 3384.631 4024.718 4664.806 5304.894 5944.982
+ [9] 6585.070 7225.158
+
+$xname
+[1] "xvect"
+
+$equidist
+[1] TRUE
+
+attr(,"class")
+[1] "histogram"</code></pre>
+</div>
 </div>
 <p><strong>Use the ds.histogram to explore the distribution of “fev1pcpredicted_cadset”</strong></p>
 </section>
@@ -908,13 +1532,23 @@ $Imperial
 <h3 class="anchored" data-anchor-id="scatterplots-of-two-numerical-variables">Scatterplots of two numerical variables</h3>
 <p>When you generate a scatter plot, you can say that the data points that are displayed are not the actual values. The function gives you the choice on how to anonymise: either you anonymise the values by additional random noise; or you take the average of the k nearest neighbours. (for more details on how anonymisation methods are used for the generation of privacy-preserving visualisations you can have a look on the paper https://epjdatascience.springeropen.com/articles/10.1140/epjds/s13688-020-00257-4)</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb84"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb84-1"><a href="#cb84-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ds.scatterPlot(x="cadset$fev1", y="cadset$weight_cadset")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb114"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb114-1"><a href="#cb114-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.scatterPlot</span>(<span class="at">x=</span><span class="st">"cadset$fev1"</span>, <span class="at">y=</span><span class="st">"cadset$weight_cadset"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="DataSHIELD_workshop_CADSET_files/figure-html/unnamed-chunk-34-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Split plot created"</code></pre>
+</div>
 </div>
 <p>Other DataSHIELD graphical functions allow the creation of box plots, heatmap plots and contour plots. Investigate them using their help functions:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb85"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb85-1"><a href="#cb85-1" aria-hidden="true" tabindex="-1"></a>?ds.heatmapPlot</span>
-<span id="cb85-2"><a href="#cb85-2" aria-hidden="true" tabindex="-1"></a>?ds.contourPlot</span>
-<span id="cb85-3"><a href="#cb85-3" aria-hidden="true" tabindex="-1"></a>?ds.boxPlot</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb116"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb116-1"><a href="#cb116-1" aria-hidden="true" tabindex="-1"></a>?ds.heatmapPlot</span>
+<span id="cb116-2"><a href="#cb116-2" aria-hidden="true" tabindex="-1"></a>?ds.contourPlot</span>
+<span id="cb116-3"><a href="#cb116-3" aria-hidden="true" tabindex="-1"></a>?ds.boxPlot</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <section id="section-3" class="level80">
 <p class="heading"></p>
@@ -927,23 +1561,223 @@ $Imperial
 <h3 class="anchored" data-anchor-id="simple-linear-regression">Simple Linear Regression</h3>
 <p>We want to examine the relationship between BMI and HDL Cholesterol</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb86"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb86-1"><a href="#cb86-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ds.cor(x='cadset$fev1', y='cadset$weight_cadset')</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb117"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb117-1"><a href="#cb117-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.cor</span>(<span class="at">x=</span><span class="st">'cadset$fev1'</span>, <span class="at">y=</span><span class="st">'cadset$weight_cadset'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$France
+$France$`Number of missing values in each variable`
+     x.val y.val
+[1,]     0     0
+
+$France$`Number of missing values casewise`
+      x.val y.val
+x.val     0     0
+y.val     0     0
+
+$France$`Correlation Matrix`
+          [,1]      [,2]
+[1,] 1.0000000 0.4583723
+[2,] 0.4583723 1.0000000
+
+$France$`Number of complete cases used`
+      x.val y.val
+x.val  3150  3150
+y.val  3150  3150
+
+
+$ISGlobal
+$ISGlobal$`Number of missing values in each variable`
+     x.val y.val
+[1,]     0     0
+
+$ISGlobal$`Number of missing values casewise`
+      x.val y.val
+x.val     0     0
+y.val     0     0
+
+$ISGlobal$`Correlation Matrix`
+          [,1]      [,2]
+[1,] 1.0000000 0.4583023
+[2,] 0.4583023 1.0000000
+
+$ISGlobal$`Number of complete cases used`
+      x.val y.val
+x.val  5500  5500
+y.val  5500  5500
+
+
+$Imperial
+$Imperial$`Number of missing values in each variable`
+     x.val y.val
+[1,]     0     0
+
+$Imperial$`Number of missing values casewise`
+      x.val y.val
+x.val     0     0
+y.val     0     0
+
+$Imperial$`Correlation Matrix`
+          [,1]      [,2]
+[1,] 1.0000000 0.4588693
+[2,] 0.4588693 1.0000000
+
+$Imperial$`Number of complete cases used`
+      x.val y.val
+x.val  3350  3350
+y.val  3350  3350
+
+
+$Groningen
+$Groningen$`Number of missing values in each variable`
+     x.val y.val
+[1,]     0     0
+
+$Groningen$`Number of missing values casewise`
+      x.val y.val
+x.val     0     0
+y.val     0     0
+
+$Groningen$`Correlation Matrix`
+          [,1]      [,2]
+[1,] 1.0000000 0.4012958
+[2,] 0.4012958 1.0000000
+
+$Groningen$`Number of complete cases used`
+      x.val y.val
+x.val  2200  2200
+y.val  2200  2200</code></pre>
+</div>
 </div>
 <p>Regress FEV1 with weigth using the Individual Partition Data (IPD) approach:</p>
 <p>The method for this (ds.glm) is a “pooled analysis”- equivalent to placing the individual-level data from all sources in one warehouse.</p>
 <p>Important to note that the link function is by default the canonical link function for each family. So binomial &lt;-&gt; logistic link, poisson &lt;-&gt; log link, gaussian &lt;-&gt; identity link.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb87"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb87-1"><a href="#cb87-1" aria-hidden="true" tabindex="-1"></a>mod <span class="ot">&lt;-</span> <span class="fu">ds.glm</span>(<span class="at">formula =</span> <span class="st">"cadset$fev1 ~ cadset$weight_cadset"</span>, </span>
-<span id="cb87-2"><a href="#cb87-2" aria-hidden="true" tabindex="-1"></a>              <span class="at">family=</span><span class="st">"gaussian"</span>)</span>
-<span id="cb87-3"><a href="#cb87-3" aria-hidden="true" tabindex="-1"></a>mod</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb119"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb119-1"><a href="#cb119-1" aria-hidden="true" tabindex="-1"></a>mod <span class="ot">&lt;-</span> <span class="fu">ds.glm</span>(<span class="at">formula =</span> <span class="st">"cadset$fev1 ~ cadset$weight_cadset"</span>, </span>
+<span id="cb119-2"><a href="#cb119-2" aria-hidden="true" tabindex="-1"></a>              <span class="at">family=</span><span class="st">"gaussian"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Iteration 1...</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>CURRENT DEVIANCE:      212504436364.628</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Iteration 2...</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>CURRENT DEVIANCE:      7724071362.55515</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Iteration 3...</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>CURRENT DEVIANCE:      7724071362.55515</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>SUMMARY OF MODEL STATE after iteration 3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Current deviance 7724071362.55515 on 14198 degrees of freedom</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Convergence criterion TRUE (0)</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+beta: 1905.47651365729 26.7711901142707</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Information matrix overall:</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>                     (Intercept) cadset$weight_cadset
+(Intercept)              14200.0             993883.9
+cadset$weight_cadset    993883.9           72307681.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Score vector overall:</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>                             [,1]
+(Intercept)          1.338631e-07
+cadset$weight_cadset 9.505078e-06</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Current deviance: 7724071362.55515</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb135"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb135-1"><a href="#cb135-1" aria-hidden="true" tabindex="-1"></a>mod</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$Nvalid
+[1] 14200
+
+$Nmissing
+[1] 0
+
+$Ntotal
+[1] 14200
+
+$disclosure.risk
+          RISK OF DISCLOSURE
+France                     0
+ISGlobal                   0
+Imperial                   0
+Groningen                  0
+
+$errorMessage
+          ERROR MESSAGES
+France    "No errors"   
+ISGlobal  "No errors"   
+Imperial  "No errors"   
+Groningen "No errors"   
+
+$nsubs
+[1] 14200
+
+$iter
+[1] 3
+
+$family
+
+Family: gaussian 
+Link function: identity 
+
+
+$formula
+[1] "cadset$fev1 ~ cadset$weight_cadset"
+
+$coefficients
+                       Estimate Std. Error  z-value p-value  low0.95CI
+(Intercept)          1905.47651 31.7738770 59.96991       0 1843.20086
+cadset$weight_cadset   26.77119  0.4452687 60.12367       0   25.89848
+                     high0.95CI
+(Intercept)           1967.7522
+cadset$weight_cadset    27.6439
+
+$dev
+[1] 7724071363
+
+$df
+[1] 14198
+
+$output.information
+[1] "SEE TOP OF OUTPUT FOR INFORMATION ON MISSING DATA AND ERROR MESSAGES"</code></pre>
+</div>
 </div>
 <p>We can use <code>ds-helper</code> to nicely see the output</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb88"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb88-1"><a href="#cb88-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dh.lmTab</span>(</span>
-<span id="cb88-2"><a href="#cb88-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">model =</span> mod, </span>
-<span id="cb88-3"><a href="#cb88-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"glm_ipd"</span>, </span>
-<span id="cb88-4"><a href="#cb88-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">direction =</span> <span class="st">"wide"</span>, </span>
-<span id="cb88-5"><a href="#cb88-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">ci_format  =</span> <span class="st">"separate"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb137"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb137-1"><a href="#cb137-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dh.lmTab</span>(</span>
+<span id="cb137-2"><a href="#cb137-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">model =</span> mod, </span>
+<span id="cb137-3"><a href="#cb137-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"glm_ipd"</span>, </span>
+<span id="cb137-4"><a href="#cb137-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">direction =</span> <span class="st">"wide"</span>, </span>
+<span id="cb137-5"><a href="#cb137-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">ci_format  =</span> <span class="st">"separate"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 7
+  variable                est    se pvalue  lowci  uppci n_obs
+  &lt;chr&gt;                 &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt; &lt;int&gt;
+1 intercept            1905.  31.8       0 1843.  1968.  14200
+2 cadset$weight_cadset   26.8  0.45      0   25.9   27.6 14200</code></pre>
+</div>
 </div>
 <p>We can perfome Study-Level Meta-Analysis (SLMA) approach. See <a href="https://isglobal-brge.github.io/resource_bookdown/basic-statistical-analyses.html#analysis-from-a-multiple-studies">https://isglobal-brge.github.io/resource_bookdown/basic-statistical-analyses.html#analysis-from-a-multiple-studies</a></p>
 </section>
@@ -951,89 +1785,121 @@ $Imperial
 <h3 class="anchored" data-anchor-id="modelling-multiple-variables-and-interactions">Modelling multiple variables and interactions</h3>
 <p>Also possible to model multiple explanatory variables and include interactions:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb89"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb89-1"><a href="#cb89-1" aria-hidden="true" tabindex="-1"></a>glm_mod1<span class="ot">&lt;-</span><span class="fu">ds.glm</span>(<span class="at">formula=</span><span class="st">"cadset$fev1 ~ cadset$weight_cadset + </span></span>
-<span id="cb89-2"><a href="#cb89-2" aria-hidden="true" tabindex="-1"></a><span class="st">                 cadset$weight_cadset*cadset$malesex_cadset +</span></span>
-<span id="cb89-3"><a href="#cb89-3" aria-hidden="true" tabindex="-1"></a><span class="st">                 cadset$smokerstatus_cadset"</span>,</span>
-<span id="cb89-4"><a href="#cb89-4" aria-hidden="true" tabindex="-1"></a>                 <span class="at">family =</span> <span class="st">"gaussian"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb139"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb139-1"><a href="#cb139-1" aria-hidden="true" tabindex="-1"></a>mod2 <span class="ot">&lt;-</span> <span class="fu">ds.glm</span>(<span class="at">formula=</span><span class="st">"cadset$fev1 ~ cadset$weight_cadset + </span></span>
+<span id="cb139-2"><a href="#cb139-2" aria-hidden="true" tabindex="-1"></a><span class="st">                 cadset$weight_cadset*cadset$sex +</span></span>
+<span id="cb139-3"><a href="#cb139-3" aria-hidden="true" tabindex="-1"></a><span class="st">                 cadset$smokerstatus_cadset"</span>,</span>
+<span id="cb139-4"><a href="#cb139-4" aria-hidden="true" tabindex="-1"></a>                 <span class="at">family =</span> <span class="st">"gaussian"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Iteration 1...</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>CURRENT DEVIANCE:      212504436364.628</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Iteration 2...</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>CURRENT DEVIANCE:      5198275796.97256</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Iteration 3...</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>CURRENT DEVIANCE:      5198275796.97256</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>SUMMARY OF MODEL STATE after iteration 3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Current deviance 5198275796.97256 on 14195 degrees of freedom</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Convergence criterion TRUE (1.83459738119958e-16)</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+beta: 2902.47225923206 6.08337625714126 717.130024017358 -61.3916811324337 3.88897593065359</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Information matrix overall:</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>                                 (Intercept) cadset$weight_cadset cadset$sex1
+(Intercept)                          14200.0             993883.9      6959.0
+cadset$weight_cadset                993883.9           72307681.3    539745.9
+cadset$sex1                           6959.0             539745.9      6959.0
+cadset$smokerstatus_cadset           11168.0             793670.6      5683.0
+cadset$weight_cadset:cadset$sex1    539745.9           42851030.1    539745.9
+                                 cadset$smokerstatus_cadset
+(Intercept)                                         11168.0
+cadset$weight_cadset                               793670.6
+cadset$sex1                                          5683.0
+cadset$smokerstatus_cadset                          17018.0
+cadset$weight_cadset:cadset$sex1                   446155.2
+                                 cadset$weight_cadset:cadset$sex1
+(Intercept)                                              539745.9
+cadset$weight_cadset                                   42851030.1
+cadset$sex1                                              539745.9
+cadset$smokerstatus_cadset                               446155.2
+cadset$weight_cadset:cadset$sex1                       42851030.1</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Score vector overall:</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>                                         [,1]
+(Intercept)                      1.443550e-08
+cadset$weight_cadset             1.002103e-06
+cadset$sex1                      6.097252e-09
+cadset$smokerstatus_cadset       1.219450e-08
+cadset$weight_cadset:cadset$sex1 4.526228e-07</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Current deviance: 5198275796.97256</code></pre>
+</div>
 </div>
 <p>The “*” between LAB_HDL and SEX means fit all possible main effects and interactions between the two covariates.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb155"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb155-1"><a href="#cb155-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dh.lmTab</span>(</span>
+<span id="cb155-2"><a href="#cb155-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">model =</span> mod2, </span>
+<span id="cb155-3"><a href="#cb155-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"glm_ipd"</span>, </span>
+<span id="cb155-4"><a href="#cb155-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">direction =</span> <span class="st">"wide"</span>, </span>
+<span id="cb155-5"><a href="#cb155-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">ci_format  =</span> <span class="st">"separate"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 5 × 7
+  variable                             est    se pvalue   lowci   uppci n_obs
+  &lt;chr&gt;                              &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt; &lt;int&gt;
+1 intercept                        2902.   39.3       0 2826.   2979.   14200
+2 cadset$weight_cadset                6.08  0.61      0    4.88    7.29 14200
+3 cadset$sex1                       717.   61.8       0  596.    838.   14200
+4 cadset$smokerstatus_cadset        -61.4   6.69      0  -74.5   -48.3  14200
+5 cadset$weight_cadset:cadset$sex1    3.89  0.86      0    2.2     5.58 14200</code></pre>
+</div>
+</div>
 </section>
 </section>
 <section id="at-the-end-of-your-rstudio-server-analysis" class="level2">
 <h2 class="anchored" data-anchor-id="at-the-end-of-your-rstudio-server-analysis">At the end of your RStudio Server analysis:</h2>
 <p>You can save your workspace:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb90"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb90-1"><a href="#cb90-1" aria-hidden="true" tabindex="-1"></a>DSI<span class="sc">::</span><span class="fu">datashield.workspace_save</span>(<span class="at">conns =</span> conns, <span class="at">ws =</span> <span class="st">"workspace2025"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb157"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb157-1"><a href="#cb157-1" aria-hidden="true" tabindex="-1"></a><span class="fu">datashield.workspace_save</span>(<span class="at">conns =</span> conns, <span class="at">ws =</span> <span class="st">"workspace2025"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Don’t forget to log out! Using:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb91"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb91-1"><a href="#cb91-1" aria-hidden="true" tabindex="-1"></a>DSI<span class="sc">::</span><span class="fu">datashield.logout</span>(conns)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb158"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb158-1"><a href="#cb158-1" aria-hidden="true" tabindex="-1"></a><span class="fu">datashield.logout</span>(conns)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>You can restore your workspace, the next time you want to continue with your analysis</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb92"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb92-1"><a href="#cb92-1" aria-hidden="true" tabindex="-1"></a>conns <span class="ot">&lt;-</span> <span class="fu">datashield.login</span>(<span class="at">logins =</span> logindata, </span>
-<span id="cb92-2"><a href="#cb92-2" aria-hidden="true" tabindex="-1"></a>                          <span class="at">assign =</span> <span class="cn">TRUE</span>, <span class="at">symbol =</span> <span class="st">"cadset"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>
-Logging into the collaborating servers</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb94"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb94-1"><a href="#cb94-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.ls</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>$France
-$France$environment.searched
-[1] "R_GlobalEnv"
-
-$France$objects.found
-character(0)
-
-
-$ISGlobal
-$ISGlobal$environment.searched
-[1] "R_GlobalEnv"
-
-$ISGlobal$objects.found
-character(0)
-
-
-$Imperial
-$Imperial$environment.searched
-[1] "R_GlobalEnv"
-
-$Imperial$objects.found
-character(0)</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb96"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb96-1"><a href="#cb96-1" aria-hidden="true" tabindex="-1"></a><span class="fu">datashield.logout</span>(conns)</span>
-<span id="cb96-2"><a href="#cb96-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb96-3"><a href="#cb96-3" aria-hidden="true" tabindex="-1"></a>conns <span class="ot">&lt;-</span> <span class="fu">datashield.login</span>(<span class="at">logins =</span> logindata, <span class="at">restore =</span> <span class="st">"workspace2025"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>
-Logging into the collaborating servers</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb98"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb98-1"><a href="#cb98-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.ls</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>$France
-$France$environment.searched
-[1] "R_GlobalEnv"
-
-$France$objects.found
-[1] "cadset"    "df_subset" "fev1_sqrt" "hdl_log"   "ONES"      "resource" 
-
-
-$ISGlobal
-$ISGlobal$environment.searched
-[1] "R_GlobalEnv"
-
-$ISGlobal$objects.found
-[1] "cadset"    "df_subset" "fev1_sqrt" "hdl_log"   "ONES"     
-
-
-$Imperial
-$Imperial$environment.searched
-[1] "R_GlobalEnv"
-
-$Imperial$objects.found
-[1] "cadset"    "df_subset" "fev1_sqrt" "hdl_log"   "ONES"     </code></pre>
-</div>
+<div class="sourceCode cell-code" id="cb159"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb159-1"><a href="#cb159-1" aria-hidden="true" tabindex="-1"></a>conns <span class="ot">&lt;-</span> <span class="fu">datashield.login</span>(<span class="at">logins =</span> logindata, </span>
+<span id="cb159-2"><a href="#cb159-2" aria-hidden="true" tabindex="-1"></a>                          <span class="at">assign =</span> <span class="cn">TRUE</span>, <span class="at">symbol =</span> <span class="st">"cadset"</span>)</span>
+<span id="cb159-3"><a href="#cb159-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.ls</span>()</span>
+<span id="cb159-4"><a href="#cb159-4" aria-hidden="true" tabindex="-1"></a><span class="fu">datashield.logout</span>(conns)</span>
+<span id="cb159-5"><a href="#cb159-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb159-6"><a href="#cb159-6" aria-hidden="true" tabindex="-1"></a>conns <span class="ot">&lt;-</span> <span class="fu">datashield.login</span>(<span class="at">logins =</span> logindata, <span class="at">restore =</span> <span class="st">"workspace2025"</span>)</span>
+<span id="cb159-7"><a href="#cb159-7" aria-hidden="true" tabindex="-1"></a><span class="fu">ds.ls</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Also you can delete unwanted workspaces using the datashield.workspace_rm</p>
 <p>In Rstudio Server: DON’T forget to use the orange “quit the current R session” button (top right of browser screen) before closing the tab- otherwise you will experience an error message the next time you try to log in.</p>
@@ -1061,242 +1927,236 @@ $Imperial$objects.found
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
-    const isCodeAnnotation = (el) => {
-      for (const clz of el.classList) {
-        if (clz.startsWith('code-annotation-')) {                     
-          return true;
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
       }
-      return false;
-    }
-    const onCopySuccess = function(e) {
-      // button target
-      const button = e.trigger;
-      // don't keep focus
-      button.blur();
-      // flash "checked"
-      button.classList.add('code-copy-button-checked');
-      var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
-      let tooltip;
-      if (window.bootstrap) {
-        button.setAttribute("data-bs-toggle", "tooltip");
-        button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
-        tooltip = new bootstrap.Tooltip(button, 
-          { trigger: "manual", 
-            customClass: "code-copy-button-tooltip",
-            offset: [0, -8]});
-        tooltip.show();    
-      }
-      setTimeout(function() {
-        if (tooltip) {
-          tooltip.hide();
-          button.removeAttribute("data-bs-title");
-          button.removeAttribute("data-bs-toggle");
-          button.removeAttribute("data-bs-placement");
-        }
-        button.setAttribute("title", currentTitle);
-        button.classList.remove('code-copy-button-checked');
-      }, 1000);
-      // clear code selection
-      e.clearSelection();
-    }
-    const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
-        }
-        return codeEl.innerText;
-    }
-    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-      text: getTextToCopy
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
     });
-    clipboard.on('success', onCopySuccess);
-    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-        text: getTextToCopy,
-        container: window.document.getElementById('quarto-embedded-source-code-modal')
-      });
-      clipboardModal.on('success', onCopySuccess);
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
-      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
-      var isInternal = (href) => {
-          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-      }
-      // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-      for (var i=0; i<links.length; i++) {
-        const link = links[i];
-        if (!isInternal(link.href)) {
-          // undo the damage that might have been done by quarto-nav.js in the case of
-          // links that we want to consider external
-          if (link.dataset.originalHref !== undefined) {
-            link.href = link.dataset.originalHref;
-          }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
         }
       }
-    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-      const config = {
-        allowHTML: true,
-        maxWidth: 500,
-        delay: 100,
-        arrow: false,
-        appendTo: function(el) {
-            return el.parentElement;
-        },
-        interactive: true,
-        interactiveBorder: 10,
-        theme: 'quarto',
-        placement: 'bottom-start',
-      };
-      if (contentFn) {
-        config.content = contentFn;
-      }
-      if (onTriggerFn) {
-        config.onTrigger = onTriggerFn;
-      }
-      if (onUntriggerFn) {
-        config.onUntrigger = onUntriggerFn;
-      }
-      window.tippy(el, config); 
     }
-    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-    for (var i=0; i<noterefs.length; i++) {
-      const ref = noterefs[i];
-      tippyHover(ref, function() {
-        // use id or data attribute instead here
-        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-        try { href = new URL(href).hash; } catch {}
-        const id = href.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note) {
-          return note.innerHTML;
-        } else {
-          return "";
-        }
-      });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
     }
-    const xrefs = window.document.querySelectorAll('a.quarto-xref');
-    const processXRef = (id, note) => {
-      // Strip column container classes
-      const stripColumnClz = (el) => {
-        el.classList.remove("page-full", "page-columns");
-        if (el.children) {
-          for (const child of el.children) {
-            stripColumnClz(child);
-          }
-        }
-      }
-      stripColumnClz(note)
-      if (id === null || id.startsWith('sec-')) {
-        // Special case sections, only their first couple elements
-        const container = document.createElement("div");
-        if (note.children && note.children.length > 2) {
-          container.appendChild(note.children[0].cloneNode(true));
-          for (let i = 1; i < note.children.length; i++) {
-            const child = note.children[i];
-            if (child.tagName === "P" && child.innerText === "") {
-              continue;
-            } else {
-              container.appendChild(child.cloneNode(true));
-              break;
-            }
-          }
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(container);
-          }
-          return container.innerHTML
-        } else {
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(note);
-          }
-          return note.innerHTML;
-        }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
       } else {
-        // Remove any anchor links if they are present
-        const anchorLink = note.querySelector('a.anchorjs-link');
-        if (anchorLink) {
-          anchorLink.remove();
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
         }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
         if (window.Quarto?.typesetMath) {
           window.Quarto.typesetMath(note);
         }
-        if (note.classList.contains("callout")) {
-          return note.outerHTML;
-        } else {
-          return note.innerHTML;
-        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
       }
     }
-    for (var i=0; i<xrefs.length; i++) {
-      const xref = xrefs[i];
-      tippyHover(xref, undefined, function(instance) {
-        instance.disable();
-        let url = xref.getAttribute('href');
-        let hash = undefined; 
-        if (url.startsWith('#')) {
-          hash = url;
-        } else {
-          try { hash = new URL(url).hash; } catch {}
-        }
-        if (hash) {
-          const id = hash.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note !== null) {
-            try {
-              const html = processXRef(id, note.cloneNode(true));
-              instance.setContent(html);
-            } finally {
-              instance.enable();
-              instance.show();
-            }
-          } else {
-            // See if we can fetch this
-            fetch(url.split('#')[0])
-            .then(res => res.text())
-            .then(html => {
-              const parser = new DOMParser();
-              const htmlDoc = parser.parseFromString(html, "text/html");
-              const note = htmlDoc.getElementById(id);
-              if (note !== null) {
-                const html = processXRef(id, note);
-                instance.setContent(html);
-              } 
-            }).finally(() => {
-              instance.enable();
-              instance.show();
-            });
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
           }
         } else {
-          // See if we can fetch a full url (with no hash to target)
-          // This is a special case and we should probably do some content thinning / targeting
-          fetch(url)
+          // See if we can fetch this
+          fetch(url.split('#')[0])
           .then(res => res.text())
           .then(html => {
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.querySelector('main.content');
+            const note = htmlDoc.getElementById(id);
             if (note !== null) {
-              // This should only happen for chapter cross references
-              // (since there is no id in the URL)
-              // remove the first header
-              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-                note.children[0].remove();
-              }
-              const html = processXRef(null, note);
+              const html = processXRef(id, note);
               instance.setContent(html);
             } 
           }).finally(() => {
@@ -1304,161 +2164,185 @@ $Imperial$objects.found
             instance.show();
           });
         }
-      }, function(instance) {
-      });
-    }
-        let selectedAnnoteEl;
-        const selectorForAnnotation = ( cell, annotation) => {
-          let cellAttr = 'data-code-cell="' + cell + '"';
-          let lineAttr = 'data-code-annotation="' +  annotation + '"';
-          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-          return selector;
-        }
-        const selectCodeLines = (annoteEl) => {
-          const doc = window.document;
-          const targetCell = annoteEl.getAttribute("data-target-cell");
-          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-          const lineIds = lines.map((line) => {
-            return targetCell + "-" + line;
-          })
-          let top = null;
-          let height = null;
-          let parent = null;
-          if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
-            }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
-            }
-            selectedAnnoteEl = annoteEl;
-          }
-        };
-        const unselectCodeLines = () => {
-          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-          elementsIds.forEach((elId) => {
-            const div = window.document.getElementById(elId);
-            if (div) {
-              div.remove();
-            }
-          });
-          selectedAnnoteEl = undefined;
-        };
-          // Handle positioning of the toggle
-      window.addEventListener(
-        "resize",
-        throttle(() => {
-          elRect = undefined;
-          if (selectedAnnoteEl) {
-            selectCodeLines(selectedAnnoteEl);
-          }
-        }, 10)
-      );
-      function throttle(fn, ms) {
-      let throttle = false;
-      let timer;
-        return (...args) => {
-          if(!throttle) { // first call gets through
-              fn.apply(this, args);
-              throttle = true;
-          } else { // all the others get throttled
-              if(timer) clearTimeout(timer); // cancel #2
-              timer = setTimeout(() => {
-                fn.apply(this, args);
-                timer = throttle = false;
-              }, ms);
-          }
-        };
-      }
-        // Attach click handler to the DT
-        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-        for (const annoteDlNode of annoteDls) {
-          annoteDlNode.addEventListener('click', (event) => {
-            const clickedEl = event.target;
-            if (clickedEl !== selectedAnnoteEl) {
-              unselectCodeLines();
-              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-              if (activeEl) {
-                activeEl.classList.remove('code-annotation-active');
-              }
-              selectCodeLines(clickedEl);
-              clickedEl.classList.add('code-annotation-active');
-            } else {
-              // Unselect the line
-              unselectCodeLines();
-              clickedEl.classList.remove('code-annotation-active');
-            }
-          });
-        }
-    const findCites = (el) => {
-      const parentEl = el.parentElement;
-      if (parentEl) {
-        const cites = parentEl.dataset.cites;
-        if (cites) {
-          return {
-            el,
-            cites: cites.split(' ')
-          };
-        } else {
-          return findCites(el.parentElement)
-        }
       } else {
-        return undefined;
-      }
-    };
-    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-    for (var i=0; i<bibliorefs.length; i++) {
-      const ref = bibliorefs[i];
-      const citeInfo = findCites(ref);
-      if (citeInfo) {
-        tippyHover(citeInfo.el, function() {
-          var popup = window.document.createElement('div');
-          citeInfo.cites.forEach(function(cite) {
-            var citeDiv = window.document.createElement('div');
-            citeDiv.classList.add('hanging-indent');
-            citeDiv.classList.add('csl-entry');
-            var biblioDiv = window.document.getElementById('ref-' + cite);
-            if (biblioDiv) {
-              citeDiv.innerHTML = biblioDiv.innerHTML;
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
             }
-            popup.appendChild(citeDiv);
-          });
-          return popup.innerHTML;
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
         });
       }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
     }
-  });
-  </script>
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
 </div> <!-- /content -->
 
 
